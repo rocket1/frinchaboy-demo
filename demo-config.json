@@ -1,0 +1,120 @@
+{
+  "colors": [
+    "#218c8d",
+    "#6ccecb",
+    "#a8a8a8",
+    "#ef7126",
+    "#473e3f",
+    "#8edc9d",
+    "#ff53a0"
+
+  ],
+  "projects": [
+    {
+      "title": "PDX Flix",
+      "imgSrc": "/img/pdxflix.png",
+      "url": "http://www.pdxflix.com",
+      "description": "I find most movie showtimes websites to be full of adverts and noise, and doesn't reflect the boutique theater culture of Portland."
+    },
+    {
+      "title": "Asylum Arts",
+      "imgSrc": "/img/asylum-arts.png",
+      "url": "http://www.asylum-arts.org",
+      "description": "Asylum Arts supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations."
+    },
+    {
+      "title": "Whisperer (Google)",
+      "imgSrc": "/img/whisperer-2.png",
+      "description": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools."
+    },
+    {
+      "title": "Whisperer v2 (Google)",
+      "imgSrc": "/img/whisperer-v2.png",
+      "description": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools."
+    },
+    {
+      "title": "Abacus (Google)",
+      "imgSrc": "/img/abacus.png",
+      "description": "This tool was used by companies wishing to view metrics reagarding their internal Google online tools usage (e.g. Docs, Sheeets)."
+    },
+    {
+      "title": "Diva (Google)",
+      "imgSrc": "/img/diva.png",
+      "description": "This was an inventory tool for retail.  It used RFID tracking of merchandise to accurately track inventory in-store or remote."
+    },
+    {
+      "title": "The Hilt",
+      "imgSrc": "/img/hilt.png",
+      "description": "The Hilt is a popular bar on Alberta St. in Portland, Oregon."
+    },
+    {
+      "title": "Mancala",
+      "imgSrc": "/img/mancala.png",
+      "description": "An attempt to port my college Artificial Intelligence project from C++ to JS."
+    },
+    {
+      "title": "North American Repower",
+      "imgSrc": "/img/nar.png",
+      "description": "NAR develops diesel-to-natural gas conversion kits for semi trucks. I built an installer system that allows secure installation records and for the EPA to search for vehicle history by VIN."
+    },
+    {
+      "title": "O/M Studio",
+      "imgSrc": "/img/om.png",
+      "description": "O/M is a design studio based in San Francisco."
+    },
+    {
+      "title": "MIGA",
+      "imgSrc": "/img/miga.png",
+      "url": "http://www.pdxflix.com",
+      "description": "Make Israel Great Again (MIGA) supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations."
+    },
+    {
+      "title": "Slide Viewer",
+      "imgSrc": "/img/slide-viewer.png",
+      "url": "http://www.asylum-arts.org",
+      "description": "Slide viewer is for delivering online tests."
+    },
+    {
+      "title": "Six Points Fellowship",
+      "imgSrc": "/img/6points.png",
+      "url": "http://www.asylum-arts.org",
+      "description": "Six Points Fellowship supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations."
+    },
+    {
+      "title": "Six Points Fellowship v2",
+      "imgSrc": "/img/6points-v2.png",
+      "url": "http://www.asylum-arts.org",
+      "description": "Six Points Fellowship supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations."
+    },
+    {
+      "title": "Ben Lee (Musician)",
+      "imgSrc": "/img/ben-lee.png",
+      "url": "http://www.asylum-arts.org",
+      "description": "Musician from Australia."
+    },
+    {
+      "title": "The Peels (Band)",
+      "imgSrc": "/img/the-peels.png",
+      "url": "http://www.asylum-arts.org",
+      "description": "Long defunct band that was briefly signed to Columbia."
+    },
+    {
+      "title": "Combio",
+      "imgSrc": "/img/combio.png",
+      "url": "http://www.asylum-arts.org",
+      "description": "Combio was a web-portal company that I worked for in 2000 just before and leading up to the Great Internet Crash."
+    },
+    {
+      "title": "Van Diemen's Land",
+      "imgSrc": "/img/van-diemen.png",
+      "url": "http://www.asylum-arts.org",
+      "description": "Van Diemen's land was an Australian rock band collective."
+    },
+    {
+      "title": "Find Your Junk",
+      "imgSrc": "/img/fyj.png",
+      "url": "http://www.asylum-arts.org",
+      "description": "A public lost and found website."
+    }
+  ]
+}

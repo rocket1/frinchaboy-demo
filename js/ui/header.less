@@ -1,0 +1,41 @@
+@import "mixins";
+
+.header {
+
+  .hero {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 600px;
+
+    background-image: url("/img/hero-bg.jpg");
+    @bgSize: cover;
+    .bg-size(@bgSize);
+    background-position-y: top;
+
+    .hero-text {
+
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+  }
+}
