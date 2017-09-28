@@ -37,6 +37,8 @@
     background-position-y: top;
   }
 
+  will-change: transform, opacity;
+
   &:hover {
     cursor: pointer;
     transform: scale(1.14);
@@ -44,5 +46,8 @@
     @t: .2s;
     -webkit-transition-duration: @t; /* Safari */
     transition-duration: @t;
+
+    // !!!!! Crazy ass property helps chrome with the animations :P :P :P
+    will-change: transform, opacity;
   }
 }
