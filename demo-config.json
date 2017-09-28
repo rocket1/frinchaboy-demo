@@ -43,6 +43,11 @@
       "description": "This was an inventory tool for retail.  It used RFID tracking of merchandise to accurately track inventory in-store or remote."
     },
     {
+      "title": "Junkmedia",
+      "imgSrc": "/img/junkmedia.png",
+      "description": "Junkmedia was an online music review magazine foudned in 2002."
+    },
+    {
       "title": "The Hilt",
       "imgSrc": "/img/hilt.png",
       "description": "The Hilt is a popular bar on Alberta St. in Portland, Oregon."
@@ -115,6 +120,30 @@
       "imgSrc": "/img/fyj.png",
       "url": "http://www.asylum-arts.org",
       "description": "A public lost and found website."
+    },
+    {
+      "title": "Machine Vision Products",
+      "imgSrc": "/img/mvp.png",
+      "url": "http://www.asylum-arts.org",
+      "description": "MVP builds Automated Optical Inspection machines for circuit board assembly production."
+    },
+    {
+      "title": "Nathan James & Ben Hernandez (Musicians)",
+      "imgSrc": "/img/nathan-james.png",
+      "url": "http://www.asylum-arts.org",
+      "description": "Nathan James is a world-class blues musician."
+    },
+    {
+      "title": "Nathan James (Musician)",
+      "imgSrc": "/img/nathan-james-v2.png",
+      "url": "http://www.asylum-arts.org",
+      "description": "Nathan James is a world-class blues musician."
+    },
+    {
+      "title": "LNWIA",
+      "imgSrc": "/img/lnwia.png",
+      "url": "http://www.asylum-arts.org",
+      "description": "LNWIA is an insurance company based in Oceanside, CA."
     }
   ]
 }

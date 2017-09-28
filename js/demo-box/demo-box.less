@@ -35,4 +35,13 @@
     .bg-size(@bgSize);
     background-position-y: top;
   }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 1000;
+    @t: .5s;
+    -webkit-transition-duration: @t; /* Safari */
+    transition-duration: @t;
+  }
 }
