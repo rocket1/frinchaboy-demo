@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import CSSModules from 'react-css-modules';
-import MicroEvent from 'microevent';
 import styled from 'styled-components'
 import styles from './demo-box.less';
 
@@ -49,7 +48,7 @@ class DemoBox extends Component {
      *
      */
     componentDidMount() {
-        console.log('mounted: ' + this.props.config.title);
+       // console.log('mounted: ' + this.props.config.title);
     }
 
     /**

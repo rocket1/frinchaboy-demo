@@ -7,6 +7,7 @@ import DemoGrid from '../demo-grid/demo-grid';
 import DemoModal from '../demo-modal/demo-modal';
 import Header from '../ui/header';
 import styles from './app.less';
+import keydown from 'react-keydown';
 
 class App extends Component {
 
@@ -24,6 +25,16 @@ class App extends Component {
 
         this.openModal = this.openModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
+    }
+
+    /**
+     *
+     * @param evt
+     */
+    @keydown('esc')
+    submit(evt) {
+        evt.preventDefault();
+        this.closeModal();
     }
 
     /**

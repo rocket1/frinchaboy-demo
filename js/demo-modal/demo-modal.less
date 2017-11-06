@@ -10,6 +10,7 @@
   z-index: -1;
   visibility: hidden;
   opacity: 0;
+  overflow-x: hidden;
 
   .transition(~"visibility, opacity, z-index", 0.3s);
 
@@ -18,7 +19,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: #98b5e6;
 
   &.show {
     z-index: 999;
@@ -26,31 +27,75 @@
     opacity: 1;
   }
 
-  .toolbar-wrapper {
-    background-color: transparent;
-    border: 0;
-    .toolbar {
-      color: white;
+  .screenshots {
+
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+
+    .screenshot {
+
+      .force-width(300px);
+      height: 100%;
+      margin-right: 10px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
-  .body {
+  @paddingX: 24px;
+  @paddingY: 24px;
 
+  .modal-wrapper {
+
+    position: relative;
     display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 24px;
+    flex: 1;
 
-    .content {
+    .toolbar-wrapper {
 
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      width: 100%;
+      top: 0;
+      position: fixed;
+      background-color: transparent;
+      padding: @paddingY @paddingX;
 
-      h2 {
-        color: white;
+      .toolbar {
+
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        h2 {
+          margin: 0;
+        }
+
+        svg {
+          color: white !important;
+        }
+      }
+    }
+
+    .body {
+
+      padding: 90px @paddingX;
+      justify-content: center;
+      align-items: center;
+      overflow-y: scroll;
+
+      .verbose {
+        width: 500px;
         margin-bottom: 24px;
+      }
+
+      .content {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: center;
       }
     }
   }
