@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import CSSModules from 'react-css-modules';
+import MicroEvent from 'microevent';
 import styled from 'styled-components'
 import styles from './demo-box.less';
 
@@ -13,18 +14,18 @@ class DemoBox extends Component {
 
         super(props);
 
-        let project = this.props.config;
+        let project = props.config;
 
         const ImageDiv = styled.div`
             background-image: url(${project.imgSrc});
         `;
 
         const InfoDiv = styled.div`
-            background-color: ${this.props.bgColor};
+            background-color: ${props.bgColor};
         `;
 
         this.StyledDemoBox = (
-            <div styleName="demo-box">
+            <div styleName="demo-box" onClick={(evt) => this.doClick(evt, project)}>
                 <ImageDiv styleName="demo-img"/>
                 <InfoDiv styleName="info-div">
                     <div styleName="title">{project.title}</div>
@@ -32,6 +33,23 @@ class DemoBox extends Component {
                 </InfoDiv>
             </div>
         );
+    }
+
+    /**
+     *
+     * @param evt
+     * @param project
+     */
+    doClick(evt, project) {
+        evt.preventDefault();
+        this.props.demoBoxClick(project);
+    }
+
+    /**
+     *
+     */
+    componentDidMount() {
+        console.log('mounted: ' + this.props.config.title);
     }
 
     /**

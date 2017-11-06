@@ -15,8 +15,7 @@ class DemoGrid extends Component {
         super(props);
         this._demoBoxes = demoConfig.projects.map((config, index) => {
             let bgColor = demoConfig.colors[index % demoConfig.colors.length];
-            console.log(bgColor);
-            return <DemoBox key={index} config={config} bgColor={bgColor}/>
+            return <DemoBox demoBoxClick={props.demoBoxClick} key={index} config={config} bgColor={bgColor}/>
         });
     }
 
