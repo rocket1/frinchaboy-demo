@@ -20,15 +20,15 @@ class DemoModal extends Component {
      */
     render() {
 
+        let top = window.scrollY;
         let project = this.props.project;
         let content = project ? <h2>{project.title}</h2> : null;
-
-        let className = cx(styles.demoModal, {
-            [styles.show] : !!project
+        let className = cx(styles['demo-modal'], {
+            [styles.show]: !!project
         });
 
         return (
-            <div className={className}>
+            <div className={className} style={{top: top}}>
                 <div styleName="toolbar-wrapper">
                     <div className="toolbar">
                         <a onClick={(e) => this.closeModal(e)} href>

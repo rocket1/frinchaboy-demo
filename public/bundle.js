@@ -27160,6 +27160,7 @@ var App = function (_Component) {
 
 
     App.prototype.openModal = function openModal(project) {
+        document.body.style.overflow = "hidden";
         this.setState({ project: project });
     };
 
@@ -27169,6 +27170,7 @@ var App = function (_Component) {
 
 
     App.prototype.closeModal = function closeModal() {
+        document.body.style.overflow = "auto";
         this.setState({ project: null });
     };
 
@@ -44338,18 +44340,18 @@ var DemoModal = function (_Component) {
         var _cx,
             _this2 = this;
 
+        var top = window.scrollY;
         var project = this.props.project;
         var content = project ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'h2',
             null,
             project.title
         ) : null;
-
-        var className = __WEBPACK_IMPORTED_MODULE_3_classnames___default()(__WEBPACK_IMPORTED_MODULE_2__demo_modal_less___default.a.demoModal, (_cx = {}, _cx[__WEBPACK_IMPORTED_MODULE_2__demo_modal_less___default.a.show] = !!project, _cx));
+        var className = __WEBPACK_IMPORTED_MODULE_3_classnames___default()(__WEBPACK_IMPORTED_MODULE_2__demo_modal_less___default.a['demo-modal'], (_cx = {}, _cx[__WEBPACK_IMPORTED_MODULE_2__demo_modal_less___default.a.show] = !!project, _cx));
 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: className },
+            { className: className, style: { top: top } },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { styleName: 'toolbar-wrapper' },
@@ -44422,11 +44424,11 @@ exports = module.exports = __webpack_require__(53)(undefined);
 
 
 // module
-exports.push([module.i, "*[open-modal]:hover,\n*[close-modal]:hover {\n  cursor: pointer;\n}\n.js-demo-modal-___demo-modal__demoModal___2TL6U {\n  color: white;\n  z-index: -1;\n  visibility: hidden;\n  opacity: 0;\n  -webkit-transition-property: visibility, opacity, z-index;\n  -webkit-transition-duration: 0.3s;\n  -webkit-transition-timing-function: ease-in-out;\n  -moz-transition-property: visibility, opacity, z-index;\n  -moz-transition-duration: 0.3s;\n  -moz-transition-timing-function: ease-in-out;\n  -o-transition-property: visibility, opacity, z-index;\n  -o-transition-duration: 0.3s;\n  -o-transition-timing-function: ease-in-out;\n  transition-property: visibility, opacity, z-index;\n  transition-duration: 0.3s;\n  transition-timing-function: ease-in-out;\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  display: flex;\n  flex-direction: column;\n  background-color: black;\n}\n.js-demo-modal-___demo-modal__demoModal___2TL6U.js-demo-modal-___demo-modal__show___3Bc6e {\n  z-index: 999;\n  visibility: visible;\n  opacity: 1;\n}\n.js-demo-modal-___demo-modal__demoModal___2TL6U .js-demo-modal-___demo-modal__toolbar-wrapper___2D4xd {\n  background-color: transparent;\n  border: 0;\n}\n.js-demo-modal-___demo-modal__demoModal___2TL6U .js-demo-modal-___demo-modal__toolbar-wrapper___2D4xd .js-demo-modal-___demo-modal__toolbar___U1vml {\n  color: white;\n}\n.js-demo-modal-___demo-modal__demoModal___2TL6U .js-demo-modal-___demo-modal__body___2Gvj4 {\n  display: flex;\n  height: 100%;\n  justify-content: center;\n  align-items: center;\n  padding-bottom: 24px;\n}\n.js-demo-modal-___demo-modal__demoModal___2TL6U .js-demo-modal-___demo-modal__body___2Gvj4 .js-demo-modal-___demo-modal__content___260W3 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.js-demo-modal-___demo-modal__demoModal___2TL6U .js-demo-modal-___demo-modal__body___2Gvj4 .js-demo-modal-___demo-modal__content___260W3 h2 {\n  color: white;\n  margin-bottom: 24px;\n}\n", ""]);
+exports.push([module.i, "*[open-modal]:hover,\n*[close-modal]:hover {\n  cursor: pointer;\n}\n.js-demo-modal-___demo-modal__demo-modal___Wxr_r {\n  color: white;\n  z-index: -1;\n  visibility: hidden;\n  opacity: 0;\n  -webkit-transition-property: visibility, opacity, z-index;\n  -webkit-transition-duration: 0.3s;\n  -webkit-transition-timing-function: ease-in-out;\n  -moz-transition-property: visibility, opacity, z-index;\n  -moz-transition-duration: 0.3s;\n  -moz-transition-timing-function: ease-in-out;\n  -o-transition-property: visibility, opacity, z-index;\n  -o-transition-duration: 0.3s;\n  -o-transition-timing-function: ease-in-out;\n  transition-property: visibility, opacity, z-index;\n  transition-duration: 0.3s;\n  transition-timing-function: ease-in-out;\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  display: flex;\n  flex-direction: column;\n  background-color: black;\n}\n.js-demo-modal-___demo-modal__demo-modal___Wxr_r.js-demo-modal-___demo-modal__show___3Bc6e {\n  z-index: 999;\n  visibility: visible;\n  opacity: 1;\n}\n.js-demo-modal-___demo-modal__demo-modal___Wxr_r .js-demo-modal-___demo-modal__toolbar-wrapper___2D4xd {\n  background-color: transparent;\n  border: 0;\n}\n.js-demo-modal-___demo-modal__demo-modal___Wxr_r .js-demo-modal-___demo-modal__toolbar-wrapper___2D4xd .js-demo-modal-___demo-modal__toolbar___U1vml {\n  color: white;\n}\n.js-demo-modal-___demo-modal__demo-modal___Wxr_r .js-demo-modal-___demo-modal__body___2Gvj4 {\n  display: flex;\n  height: 100%;\n  justify-content: center;\n  align-items: center;\n  padding-bottom: 24px;\n}\n.js-demo-modal-___demo-modal__demo-modal___Wxr_r .js-demo-modal-___demo-modal__body___2Gvj4 .js-demo-modal-___demo-modal__content___260W3 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.js-demo-modal-___demo-modal__demo-modal___Wxr_r .js-demo-modal-___demo-modal__body___2Gvj4 .js-demo-modal-___demo-modal__content___260W3 h2 {\n  color: white;\n  margin-bottom: 24px;\n}\n", ""]);
 
 // exports
 exports.locals = {
-	"demoModal": "js-demo-modal-___demo-modal__demoModal___2TL6U",
+	"demo-modal": "js-demo-modal-___demo-modal__demo-modal___Wxr_r",
 	"show": "js-demo-modal-___demo-modal__show___3Bc6e",
 	"toolbar-wrapper": "js-demo-modal-___demo-modal__toolbar-wrapper___2D4xd",
 	"toolbar": "js-demo-modal-___demo-modal__toolbar___U1vml",
@@ -44642,7 +44644,7 @@ exports = module.exports = __webpack_require__(53)(undefined);
 
 
 // module
-exports.push([module.i, "* {\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\nhtml,\nbody {\n  font-family: monospace, serif;\n  margin: 0;\n}\n.js-app-___app__content___5KF_r {\n  display: flex;\n  justify-content: center;\n  width: 100%;\n}\n.js-app-___app__content___5KF_r .js-app-___app__content-inner___2eljr {\n  display: flex;\n  justify-content: center;\n}\n", ""]);
+exports.push([module.i, "* {\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\nhtml,\nbody {\n  font-family: monospace, serif;\n  margin: 0;\n}\n::-webkit-scrollbar {\n  width: 0;\n  /* remove scrollbar space */\n  background: transparent;\n  /* optional: just make scrollbar invisible */\n}\n.js-app-___app__content___5KF_r {\n  display: flex;\n  justify-content: center;\n  width: 100%;\n}\n.js-app-___app__content___5KF_r .js-app-___app__content-inner___2eljr {\n  display: flex;\n  justify-content: center;\n}\n", ""]);
 
 // exports
 exports.locals = {

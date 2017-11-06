@@ -31,6 +31,7 @@ class App extends Component {
      * @param project
      */
     openModal(project) {
+        document.body.style.overflow = "hidden";
         this.setState({project: project});
     }
 
@@ -38,6 +39,7 @@ class App extends Component {
      *
      */
     closeModal() {
+        document.body.style.overflow = "auto";
         this.setState({project: null});
     }
 
