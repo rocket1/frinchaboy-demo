@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import CSSModules from 'react-css-modules';
-import {render} from 'react-dom';
 import {BrowserRouter, Route} from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import DemoGrid from '../demo-grid/demo-grid';
@@ -39,14 +38,23 @@ class App extends Component {
     }
 
     /**
-     * \
+     * Stolen from: https://stackoverflow.com/questions/1397329/how-to-remove-the-hash-from-window-location-url-with-javascript-without-page-r/5298684#5298684
+     * @private
+     */
+    _removeHash() {
+        history.pushState("", document.title, window.location.pathname
+            + window.location.search);
+    }
+
+    /**
+     *
      * @param project
      * @param bgColor
      */
     openModal(project, bgColor) {
         document.body.style.overflow = "hidden";
-        this.setState({modalBgColor: bgColor});
-        this.setState({project: project});
+        this.setState({modalBgColor: bgColor, project: project});
+        window.location = '#';
     }
 
     /**
@@ -55,6 +63,7 @@ class App extends Component {
     closeModal() {
         document.body.style.overflow = "auto";
         this.setState({project: null});
+        this._removeHash();
     }
 
     /**
@@ -67,7 +76,8 @@ class App extends Component {
                 <BrowserRouter>
                     <Route exact path="/">
                         <div>
-                            <DemoModal project={this.state.project} closeFunc={this.closeModal} bgColor={this.state.modalBgColor}/>
+                            <DemoModal project={this.state.project} closeFunc={this.closeModal}
+                                       bgColor={this.state.modalBgColor}/>
                             <Header/>
                             <div styleName="content">
                                 <div styleName="content-inner">
