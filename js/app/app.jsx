@@ -46,6 +46,11 @@ class App extends Component {
             + window.location.search);
     }
 
+    _addHash () {
+        history.pushState("#", document.title, window.location.pathname
+            + window.location.search);
+    }
+
     /**
      *
      * @param project
@@ -54,7 +59,7 @@ class App extends Component {
     openModal(project, bgColor) {
         document.body.style.overflow = "hidden";
         this.setState({modalBgColor: bgColor, project: project});
-        window.location = '#';
+        this._addHash();
     }
 
     /**
