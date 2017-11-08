@@ -24,7 +24,7 @@ class DemoBox extends Component {
         `;
 
         this.StyledDemoBox = (
-            <div styleName="demo-box" onClick={(evt) => this.doClick(evt, project)}>
+            <div styleName="demo-box" onClick={(evt) => this.doClick(evt, project, props.bgColor)}>
                 <ImageDiv styleName="demo-img"/>
                 <InfoDiv styleName="info-div">
                     <div styleName="title">{project.title}</div>
@@ -38,10 +38,11 @@ class DemoBox extends Component {
      *
      * @param evt
      * @param project
+     * @param bgColor
      */
-    doClick(evt, project) {
+    doClick(evt, project, bgColor) {
         evt.preventDefault();
-        this.props.demoBoxClick(project);
+        this.props.demoBoxClick(project, bgColor);
     }
 
     /**

@@ -20,7 +20,8 @@ class App extends Component {
         super(props);
 
         this.state = {
-            project: null
+            project: null,
+            modalBgColor: null
         };
 
         this.openModal = this.openModal.bind(this);
@@ -38,11 +39,13 @@ class App extends Component {
     }
 
     /**
-     *
+     * \
      * @param project
+     * @param bgColor
      */
-    openModal(project) {
+    openModal(project, bgColor) {
         document.body.style.overflow = "hidden";
+        this.setState({modalBgColor: bgColor});
         this.setState({project: project});
     }
 
@@ -64,7 +67,7 @@ class App extends Component {
                 <BrowserRouter>
                     <Route exact path="/">
                         <div>
-                            <DemoModal project={this.state.project} closeFunc={this.closeModal}/>
+                            <DemoModal project={this.state.project} closeFunc={this.closeModal} bgColor={this.state.modalBgColor}/>
                             <Header/>
                             <div styleName="content">
                                 <div styleName="content-inner">

@@ -47,7 +47,7 @@ class DemoModal extends Component {
         });
 
         return (
-            <div className={className} style={{top: top}}>
+            <div className={className} style={{top: top, backgroundColor: this.props.bgColor}}>
                 <div styleName="modal-wrapper">
                     <div styleName="toolbar-wrapper">
                         <div styleName="toolbar">

@@ -14,183 +14,240 @@
       "imgSrc": "/img/pdxflix.png",
       "url": "http://www.pdxflix.com",
       "description": "I find most movie showtimes websites to be full of adverts and noise, and doesn't reflect the boutique theater culture of Portland.",
-      "tech": ["AngularJS"],
-      "screenshots" : ["/img/pdxflix.png"]
+      "tech": [
+        "AngularJS"
+      ],
+      "screenshots": [
+        "/img/pdxflix.png"
+      ]
     },
     {
       "title": "Asylum Arts",
       "imgSrc": "/img/asylum-arts.png",
       "url": "http://www.asylum-arts.org",
       "description": "Asylum Arts supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/asylum-arts.png","/img/asylum-arts-2.png","/img/asylum-arts-3.png","/img/asylum-arts-4.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/asylum-arts.png",
+        "/img/asylum-arts-2.png",
+        "/img/asylum-arts-3.png",
+        "/img/asylum-arts-4.png"
+      ]
     },
     {
       "title": "Whisperer (Google)",
       "imgSrc": "/img/whisperer-2.png",
       "description": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/whisperer.png",
+        "/img/whisperer-2.png"
+      ]
     },
     {
       "title": "Whisperer v2 (Google)",
       "imgSrc": "/img/whisperer-v2.png",
       "description": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/whisperer-v2.png"
+      ]
     },
     {
       "title": "Abacus (Google)",
       "imgSrc": "/img/abacus.png",
       "description": "This tool was used by companies wishing to view metrics reagarding their internal Google online tools usage (e.g. Docs, Sheeets).",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/abacus.png"
+      ]
     },
     {
       "title": "Diva (Google)",
       "imgSrc": "/img/diva.png",
       "description": "This was an inventory tool for retail.  It used RFID tracking of merchandise to accurately track inventory in-store or remote.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/diva.png"
+      ]
     },
     {
       "title": "Junkmedia",
       "imgSrc": "/img/junkmedia.png",
       "description": "Junkmedia was an online music review magazine foudned in 2002.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/junkmedia.png"
+      ]
     },
     {
       "title": "The Hilt",
       "imgSrc": "/img/hilt.png",
       "description": "The Hilt is a popular bar on Alberta St. in Portland, Oregon.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/hilt.png"
+      ]
     },
     {
       "title": "Mancala",
       "imgSrc": "/img/mancala.png",
       "description": "An attempt to port my college Artificial Intelligence project from C++ to JS.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/mancala.png"
+      ]
     },
     {
       "title": "North American Repower",
       "imgSrc": "/img/nar.png",
       "description": "NAR develops diesel-to-natural gas conversion kits for semi trucks. I built an installer system that allows secure installation records and for the EPA to search for vehicle history by VIN.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/nar.png"
+      ]
     },
     {
       "title": "O/M Studio",
       "imgSrc": "/img/om.png",
       "description": "O/M is a design studio based in San Francisco.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/om.png"
+      ]
     },
     {
       "title": "MIGA",
       "imgSrc": "/img/miga.png",
       "url": "http://www.pdxflix.com",
       "description": "Make Israel Great Again (MIGA) supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/miga.png"
+      ]
     },
     {
       "title": "Slide Viewer",
       "imgSrc": "/img/slide-viewer.png",
       "url": "http://www.asylum-arts.org",
       "description": "Slide viewer is for delivering online tests.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/slide-viewer.png"
+      ]
     },
     {
       "title": "Six Points Fellowship",
       "imgSrc": "/img/6points.png",
       "url": "http://www.asylum-arts.org",
       "description": "Six Points Fellowship supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/6points.png"
+      ]
     },
     {
       "title": "Six Points Fellowship v2",
       "imgSrc": "/img/6points-v2.png",
       "url": "http://www.asylum-arts.org",
       "description": "Six Points Fellowship supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/6points-v2.png",
+        "/img/6points-v2-2.png",
+        "/img/6points-v2-3.png"
+      ]
     },
     {
       "title": "Ben Lee (Musician)",
       "imgSrc": "/img/ben-lee.png",
       "url": "http://www.asylum-arts.org",
       "description": "Musician from Australia.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/ben-lee.png",
+        "/img/ben-lee-2.png"
+      ]
     },
     {
       "title": "The Peels (Band)",
       "imgSrc": "/img/the-peels.png",
       "url": "http://www.asylum-arts.org",
       "description": "Long defunct band that was briefly signed to Columbia.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/the-peels.png"
+      ]
     },
     {
       "title": "Combio",
       "imgSrc": "/img/combio.png",
       "url": "http://www.asylum-arts.org",
       "description": "Combio was a web-portal company that I worked for in 2000 just before and leading up to the Great Internet Crash.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/combio.png"
+      ]
     },
     {
       "title": "Van Diemen's Land",
       "imgSrc": "/img/van-diemen.png",
       "url": "http://www.asylum-arts.org",
       "description": "Van Diemen's land was an Australian rock band collective.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/van-diemen.png"
+      ]
     },
     {
       "title": "Find Your Junk",
       "imgSrc": "/img/fyj.png",
       "url": "http://www.asylum-arts.org",
       "description": "A public lost and found website.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/pdxflix.png"
+      ]
     },
     {
       "title": "Machine Vision Products",
       "imgSrc": "/img/mvp.png",
       "url": "http://www.asylum-arts.org",
       "description": "MVP builds Automated Optical Inspection machines for circuit board assembly production.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/mvp.png"
+      ]
     },
     {
       "title": "Nathan James & Ben Hernandez (Musicians)",
       "imgSrc": "/img/nathan-james.png",
       "url": "http://www.asylum-arts.org",
       "description": "Nathan James is a world-class blues musician.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/nathan-james.png"
+      ]
     },
     {
       "title": "Nathan James (Musician)",
       "imgSrc": "/img/nathan-james-v2.png",
       "url": "http://www.asylum-arts.org",
       "description": "Nathan James is a world-class blues musician.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/nathan-james-v2.png"
+      ]
     },
     {
       "title": "LNWIA",
       "imgSrc": "/img/lnwia.png",
       "url": "http://www.asylum-arts.org",
       "description": "LNWIA is an insurance company based in Oceanside, CA.",
-      "verbose" : "This is the verbos description",
-      "screenshots" : ["/img/pdxflix.png"]
+      "verbose": "This is the verbose description",
+      "screenshots": [
+        "/img/lnwia.png"
+      ]
     }
   ]
 }
