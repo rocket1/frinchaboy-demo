@@ -62,7 +62,6 @@
       "title": "Diva (Google)",
       "imgSrc": "/img/diva.png",
       "description": "This was an inventory tool for retail.  It used RFID tracking of merchandise to accurately track inventory in-store or remote.",
-      "verbose": "This is the verbose description",
       "screenshots": [
         "/img/diva.png"
       ]
@@ -95,7 +94,6 @@
       "title": "North American Repower",
       "imgSrc": "/img/nar.png",
       "description": "NAR develops diesel-to-natural gas conversion kits for semi trucks. I built an installer system that allows secure installation records and for the EPA to search for vehicle history by VIN.",
-      "verbose": "This is the verbose description",
       "screenshots": [
         "/img/nar.png"
       ]
@@ -131,7 +129,6 @@
       "imgSrc": "/img/6points.png",
       "url": "http://www.asylum-arts.org",
       "description": "Six Points Fellowship supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
-      "verbose": "This is the verbose description",
       "screenshots": [
         "/img/6points.png"
       ]
@@ -152,7 +149,6 @@
       "imgSrc": "/img/ben-lee.png",
       "url": "http://www.asylum-arts.org",
       "description": "Musician from Australia.",
-      "verbose": "This is the verbose description",
       "screenshots": [
         "/img/ben-lee.png",
         "/img/ben-lee-2.png"

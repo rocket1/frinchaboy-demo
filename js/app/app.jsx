@@ -46,9 +46,12 @@ class App extends Component {
             + window.location.search);
     }
 
+    /**
+     *
+     * @private
+     */
     _addHash () {
-        history.pushState("#", document.title, window.location.pathname
-            + window.location.search);
+        window.location = '#';
     }
 
     /**
@@ -59,7 +62,7 @@ class App extends Component {
     openModal(project, bgColor) {
         document.body.style.overflow = "hidden";
         this.setState({modalBgColor: bgColor, project: project});
-        this._addHash();
+        //this._addHash();
     }
 
     /**
@@ -68,7 +71,7 @@ class App extends Component {
     closeModal() {
         document.body.style.overflow = "auto";
         this.setState({project: null});
-        this._removeHash();
+       // this._removeHash();
     }
 
     /**
