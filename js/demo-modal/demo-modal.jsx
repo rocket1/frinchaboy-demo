@@ -12,6 +12,15 @@ class DemoModal extends Component {
      *
      * @param e
      */
+    static preventTouchMove(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+
+    /**
+     *
+     * @param e
+     */
     closeModal(e) {
         e.preventDefault();
         this.props.closeFunc();
@@ -34,6 +43,9 @@ class DemoModal extends Component {
 
         if (project) {
 
+            document.body.style.overflow = 'hidden';
+            document.body.addEventListener('touchmove', this.preventTouchMove, false);
+
             let screenshots = project.screenshots.map((src, index) => {
                 return <div key={index} styleName="screenshot"><img src={src}/></div>
             });
@@ -44,6 +56,10 @@ class DemoModal extends Component {
                     <Masonry options={masonryOptions} styleName="screenshots">{screenshots}</Masonry>
                 </div>
             );
+        }
+        else {
+            document.body.style.overflow = 'auto';
+            document.body.removeEventListener('touchmove', this.preventTouchMove, false);
         }
 
         let className = cx(styles['demo-modal'], {

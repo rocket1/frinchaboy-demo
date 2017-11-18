@@ -29,30 +29,12 @@ class App extends Component {
 
     /**
      *
-     * @param evt
+     * @param e
      */
     @keydown('esc')
-    submit(evt) {
-        evt.preventDefault();
+    submit(e) {
+        e.preventDefault();
         this.closeModal();
-    }
-
-    /**
-     * Stolen from:
-     * https://stackoverflow.com/questions/1397329/how-to-remove-the-hash-from-window-location-url-with-javascript-without-page-r/5298684#5298684
-     * @private
-     */
-    _removeHash() {
-        history.pushState("", document.title, window.location.pathname
-            + window.location.search);
-    }
-
-    /**
-     *
-     * @private
-     */
-    _addHash() {
-        window.location = '#';
     }
 
     /**
@@ -61,20 +43,14 @@ class App extends Component {
      * @param bgColor
      */
     openModal(project, bgColor) {
-        document.body.style.overflow = "hidden";
-        document.getElementsByTagName('html')[0].style.overflow = "hidden";
         this.setState({modalBgColor: bgColor, project: project});
-        //this._addHash();
     }
 
     /**
      *
      */
     closeModal() {
-        document.body.style.overflow = "auto";
-        document.getElementsByTagName('html')[0].style.overflow = "auto";
         this.setState({project: null});
-        // this._removeHash();
     }
 
     /**
