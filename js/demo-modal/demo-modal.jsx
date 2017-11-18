@@ -42,6 +42,7 @@ class DemoModal extends Component {
 
         if (project) {
 
+            document.getElementsByTagName('html')[0].style.overflow = 'hidden';
             document.body.style.overflow = 'hidden';
             document.body.addEventListener('touchmove', this.preventTouchMove, false);
 
@@ -57,6 +58,7 @@ class DemoModal extends Component {
             );
         }
         else {
+            document.getElementsByTagName('html')[0].style.overflow = 'auto';
             document.body.style.overflow = 'auto';
             document.body.removeEventListener('touchmove', this.preventTouchMove, false);
         }
