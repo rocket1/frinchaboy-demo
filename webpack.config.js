@@ -1,5 +1,5 @@
 const path = require('path');
-const webpack = require('webpack');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const config = {
     context: __dirname,
@@ -27,7 +27,11 @@ const config = {
         reasons: true,
         chunks: false
     },
-  //  plugins: [new webpack.HotModuleReplacementPlugin(), new webpack.NamedModulesPlugin()],
+   plugins: [
+      new UglifyJSPlugin(),
+       // new webpack.HotModuleReplacementPlugin(),
+       // new webpack.NamedModulesPlugin(),
+   ],
     module: {
         rules: [
             {

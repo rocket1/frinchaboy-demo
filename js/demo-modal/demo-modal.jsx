@@ -3,6 +3,7 @@ import CSSModules from 'react-css-modules';
 import styles from './demo-modal.less';
 import cx from "classnames";
 import Close from 'react-material-icons/icons/navigation/close';
+import MasonryInfiniteScroller from 'react-masonry-infinite';
 
 class DemoModal extends Component {
 
@@ -23,7 +24,6 @@ class DemoModal extends Component {
 
         let top = window.scrollY;
         let project = this.props.project;
-
         let content = null;
 
         if (project) {
@@ -36,7 +36,7 @@ class DemoModal extends Component {
                 <div className="content">
                     <div styleName="verbose">{project.verbose ? project.verbose : project.description}</div>
                     <div styleName="screenshots">
-                        {screenshots}
+                        <MasonryInfiniteScroller loadMore={() => false}>{screenshots}</MasonryInfiniteScroller>
                     </div>
                 </div>
             );

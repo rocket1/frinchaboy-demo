@@ -31,16 +31,22 @@
     display: flex;
     flex-grow: 1;
     width: 100%;
+    overflow-x: hidden;
 
     .screenshot {
 
-      .force-width(450px);
-      height: 100%;
-      margin-right: 10px;
+      @w: 350px;
 
+      //.force-width(@w);
       img {
-        width: 100%;
+        width: @w;
       }
+      //height: 100%;
+      //margin-right: 10px;
+      //
+      //img {
+      //  width: 100%;
+      //}
     }
   }
 
@@ -87,7 +93,7 @@
       overflow-y: scroll;
 
       .verbose {
-        width: 500px;
+        max-width: 450px;
         margin-bottom: 24px;
       }
 
