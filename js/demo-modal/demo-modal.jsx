@@ -37,7 +37,7 @@ class DemoModal extends Component {
 
         // TODO: Wish this was in the CSS, but didn't work there :(
         let masonryOptions = {
-            gutter: 12
+            gutter: 24
         };
 
         if (project) {

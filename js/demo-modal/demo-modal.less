@@ -38,13 +38,18 @@
 
       margin-bottom: 10px;
 
+      @media all and (max-width: 548px) {
+        width: 100%;
+        max-width: 100%;
+      }
+
       img {
 
         @w: 500px;
         width: @w;
         max-width: @w;
 
-        @media @mobile-small {
+        @media all and (max-width: 548px) {
           width: 100%;
           max-width: 100%;
         }
