@@ -22,23 +22,23 @@
     },
     {
       "title": "Asylum Arts",
-      "imgSrc": "/img/asylum-arts.png",
+      "imgSrc": "/img/asylum-arts.resized.png",
       "url": "http://www.asylum-arts.org",
       "description": "Asylum Arts supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
       "screenshots": [
-        "/img/asylum-arts.png",
-        "/img/asylum-arts-2.png",
-        "/img/asylum-arts-3.png",
-        "/img/asylum-arts-4.png"
+        "/img/asylum-arts.resized.png",
+        "/img/asylum-arts-2.resized.png",
+        "/img/asylum-arts-3.resized.png",
+        "/img/asylum-arts-4.resized.png"
       ]
     },
     {
       "title": "Whisperer (Google)",
-      "imgSrc": "/img/whisperer-2.png",
+      "imgSrc": "/img/whisperer-2.resized.png",
       "description": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools.",
       "screenshots": [
-        "/img/whisperer.png",
-        "/img/whisperer-2.png"
+        "/img/whisperer.resized.png",
+        "/img/whisperer-2.resized.png"
       ]
     },
     {
@@ -59,10 +59,10 @@
     },
     {
       "title": "Diva (Google)",
-      "imgSrc": "/img/diva.png",
+      "imgSrc": "/img/diva.resized.png",
       "description": "This was an inventory tool for retail.  It used RFID tracking of merchandise to accurately track inventory in-store or remote.",
       "screenshots": [
-        "/img/diva.png"
+        "/img/diva.resized.png"
       ]
     },
     {
@@ -75,10 +75,10 @@
     },
     {
       "title": "The Hilt",
-      "imgSrc": "/img/hilt.png",
+      "imgSrc": "/img/hilt.resized.png",
       "description": "The Hilt is a popular bar on Alberta St. in Portland, Oregon.",
       "screenshots": [
-        "/img/hilt.png"
+        "/img/hilt.resized.png"
       ]
     },
     {
@@ -99,28 +99,28 @@
     },
     {
       "title": "O/M Studio",
-      "imgSrc": "/img/om.png",
+      "imgSrc": "/img/om.resized.png",
       "description": "O/M is a design studio based in San Francisco.",
       "screenshots": [
-        "/img/om.png"
+        "/img/om.resized.png"
       ]
     },
     {
       "title": "MIGA",
-      "imgSrc": "/img/miga.png",
+      "imgSrc": "/img/miga.resized.png",
       "url": "http://www.pdxflix.com",
       "description": "Make Israel Great Again (MIGA) supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
       "screenshots": [
-        "/img/miga.png"
+        "/img/miga.resized.png"
       ]
     },
     {
       "title": "Slide Viewer",
-      "imgSrc": "/img/slide-viewer.png",
+      "imgSrc": "/img/slide-viewer.resized.png",
       "url": "http://www.asylum-arts.org",
       "description": "Slide viewer is for delivering online tests.",
       "screenshots": [
-        "/img/slide-viewer.png"
+        "/img/slide-viewer.resized.png"
       ]
     },
     {
@@ -134,23 +134,23 @@
     },
     {
       "title": "Six Points Fellowship v2",
-      "imgSrc": "/img/6points-v2.png",
+      "imgSrc": "/img/6points-v2.resized.png",
       "url": "http://www.asylum-arts.org",
       "description": "Six Points Fellowship supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
       "screenshots": [
-        "/img/6points-v2.png",
+        "/img/6points-v2.resized.png",
         "/img/6points-v2-2.png",
         "/img/6points-v2-3.png"
       ]
     },
     {
       "title": "Ben Lee (Musician)",
-      "imgSrc": "/img/ben-lee.png",
+      "imgSrc": "/img/ben-lee.resized.png",
       "url": "http://www.asylum-arts.org",
       "description": "Musician from Australia.",
       "screenshots": [
-        "/img/ben-lee.png",
-        "/img/ben-lee-2.png"
+        "/img/ben-lee.resized.png",
+        "/img/ben-lee-2.resized.png"
       ]
     },
     {
