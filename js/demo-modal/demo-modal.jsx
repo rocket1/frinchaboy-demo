@@ -27,6 +27,11 @@ class DemoModal extends Component {
         let project = this.props.project;
         let content = null;
 
+        // TODO: Wish this was in the CSS, but didn't work there :(
+        let masonryOptions = {
+            gutter: 12
+        };
+
         if (project) {
 
             let screenshots = project.screenshots.map((src, index) => {
@@ -36,9 +41,7 @@ class DemoModal extends Component {
             content = (
                 <div className="content">
                     <div styleName="verbose">{project.verbose ? project.verbose : project.description}</div>
-
-                    {/*<MasonryInfiniteScroller loadMore={() => false}>{screenshots}</MasonryInfiniteScroller>*/}
-                    <Masonry>{screenshots}</Masonry>
+                    <Masonry options={masonryOptions} styleName="screenshots">{screenshots}</Masonry>
                 </div>
             );
         }

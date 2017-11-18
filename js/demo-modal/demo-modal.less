@@ -27,33 +27,29 @@
     opacity: 1;
   }
 
-  //.screenshots {
-  //
-  //  display: flex;
-  //  flex-grow: 1;
-  //  width: 100%;
-  //  overflow-x: hidden;
+  .screenshots {
+
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    overflow-x: hidden;
 
     div.screenshot {
 
+      margin-bottom: 10px;
+
       @w: 400px;
 
-      //.force-width(@w);
+      @media @mobile-small {
+        @w: 100%;
+      }
+
       img {
         width: @w;
         max-width: @w;
-        @media @mobile-small {
-          max-width: 100%;
-        }
       }
-      //height: 100%;
-      //margin-right: 10px;
-      //
-      //img {
-      //  width: 100%;
-      //}
     }
-  //}
+  }
 
   @paddingX: 24px;
   @paddingY: 24px;
