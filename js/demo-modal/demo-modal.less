@@ -38,15 +38,16 @@
 
       margin-bottom: 10px;
 
-      @w: 400px;
-
-      @media @mobile-small {
-        @w: 100%;
-      }
-
       img {
+
+        @w: 500px;
         width: @w;
         max-width: @w;
+
+        @media @mobile-small {
+          width: 100%;
+          max-width: 100%;
+        }
       }
     }
   }
@@ -68,6 +69,7 @@
       position: fixed;
       background-color: transparent;
       padding: @paddingY @paddingX;
+      z-index: 1;
 
       .toolbar {
 
