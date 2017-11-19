@@ -14,11 +14,17 @@
 
     .transition(~"height", 0.3s);
 
-    @media @mobile-small  {
+    @media @mobile-small {
       height: 350px;
     }
 
-    background-image: url("/img/hero-bg.jpg");
+    @darken: 0.25;
+
+    background: linear-gradient(
+            rgba(0, 0, 0, @darken),
+            rgba(0, 0, 0, @darken)
+    ), url("/img/hero-bg.jpg");
+
     @bgSize: cover;
     .bg-size(@bgSize);
     background-position-y: top;
@@ -35,7 +41,7 @@
 
       h1 {
         font-size: 3rem;
-        @media @mobile-small  {
+        @media @mobile-small {
           font-size: 2rem;
         }
         font-weight: bold;
@@ -44,7 +50,7 @@
 
       h2 {
         font-size: 2rem;
-        @media @mobile-small  {
+        @media @mobile-small {
           font-size: 1.4rem;
         }
         font-weight: bold;

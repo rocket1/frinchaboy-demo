@@ -31,7 +31,6 @@ class DemoModal extends Component {
      * @private
      */
     _lockScroll() {
-
         document.getElementsByTagName('html')[0].style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
     }
@@ -51,7 +50,6 @@ class DemoModal extends Component {
      */
     render() {
 
-        let top = 0;// window.scrollY;
         let project = this.props.project;
         let content = null;
 
@@ -84,7 +82,7 @@ class DemoModal extends Component {
         });
 
         return (
-            <div className={className} style={{top: top, backgroundColor: this.props.bgColor}}>
+            <div className={className} style={{backgroundColor: this.props.bgColor}}>
                 <div styleName="modal-wrapper">
                     <div styleName="toolbar-wrapper">
                         <div styleName="toolbar">

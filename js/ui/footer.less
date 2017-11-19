@@ -1,8 +1,14 @@
-@import "../ui/variables";
+@import "mixins";
+@import "variables";
 
 .footer {
 
-  background-color: rgb(33, 140, 141);
+  background-image: url("/img/footer-bg.jpg");
+  @bgSize: cover;
+  .bg-size(@bgSize);
+  background-position-y: bottom;
+  background-position-x: right;
+
   height: @footer-height;
   display: flex;
   justify-content: center;
