@@ -28,6 +28,28 @@ class DemoModal extends Component {
 
     /**
      *
+     * @private
+     */
+    _lockScroll () {
+        document.getElementsByTagName('html')[0].style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+        document.body.addEventListener('touchstart', this.preventTouchMove, false);
+        document.body.addEventListener('touchmove', this.preventTouchMove, false);
+    }
+
+    /**
+     *
+     * @private
+     */
+    _unlockScroll () {
+        document.getElementsByTagName('html')[0].style.overflow = 'auto';
+        document.body.style.overflow = 'auto';
+        document.body.removeEventListener('touchstart', this.preventTouchMove, false);
+        document.body.removeEventListener('touchmove', this.preventTouchMove, false);
+    }
+
+    /**
+     *
      * @returns {XML}
      */
     render() {
@@ -43,10 +65,7 @@ class DemoModal extends Component {
 
         if (project) {
 
-            document.getElementsByTagName('html')[0].style.overflow = 'hidden';
-            document.body.style.overflow = 'hidden';
-            document.body.addEventListener('touchstart', this.preventTouchMove, false);
-            document.body.addEventListener('touchmove', this.preventTouchMove, false);
+            this._lockScroll();
 
             let screenshots = project.screenshots.map((src, index) => {
                 return <div key={index} styleName="screenshot"><img src={src}/></div>
@@ -60,10 +79,7 @@ class DemoModal extends Component {
             );
         }
         else {
-            document.getElementsByTagName('html')[0].style.overflow = 'auto';
-            document.body.style.overflow = 'auto';
-            document.body.removeEventListener('touchstart', this.preventTouchMove, false);
-            document.body.removeEventListener('touchmove', this.preventTouchMove, false);
+            this._unlockScroll();
         }
 
         let className = cx(styles['demo-modal'], {
