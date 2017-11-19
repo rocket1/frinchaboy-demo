@@ -33,39 +33,6 @@
       ]
     },
     {
-      "title": "Whisperer (Google)",
-      "imgSrc": "/img/whisperer-2.resized.png",
-      "description": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools.",
-      "screenshots": [
-        "/img/whisperer.resized.png",
-        "/img/whisperer-2.resized.png"
-      ]
-    },
-    {
-      "title": "Whisperer v2 (Google)",
-      "imgSrc": "/img/whisperer-v2.png",
-      "description": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools.",
-      "screenshots": [
-        "/img/whisperer-v2.png"
-      ]
-    },
-    {
-      "title": "Abacus (Google)",
-      "imgSrc": "/img/abacus.png",
-      "description": "This tool was used by companies wishing to view metrics reagarding their internal Google online tools usage (e.g. Docs, Sheeets).",
-      "screenshots": [
-        "/img/abacus.png"
-      ]
-    },
-    {
-      "title": "Diva (Google)",
-      "imgSrc": "/img/diva.resized.png",
-      "description": "This was an inventory tool for retail.  It used RFID tracking of merchandise to accurately track inventory in-store or remote.",
-      "screenshots": [
-        "/img/diva.resized.png"
-      ]
-    },
-    {
       "title": "Junkmedia",
       "imgSrc": "/img/junkmedia.png",
       "description": "Junkmedia was an online music review magazine founded in 2002.",
