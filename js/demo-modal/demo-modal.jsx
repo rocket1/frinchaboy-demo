@@ -62,7 +62,7 @@ class DemoModal extends Component {
      */
     render() {
 
-        let top = window.scrollY;
+        let top = 0;// window.scrollY;
         let project = this.props.project;
         let content = null;
 
