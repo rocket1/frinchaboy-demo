@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "webpack-dev-server",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "build": "webpack; git add ."
   },
   "dependencies": {
     "assets-webpack-plugin": "^3.5.1",
