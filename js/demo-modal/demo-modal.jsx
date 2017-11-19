@@ -12,7 +12,7 @@ class DemoModal extends Component {
      * @param e
      */
     static preventTouchMove(e) {
-        alert('foo');
+        console.log('modal scroll');
         e.preventDefault();
         e.stopPropagation();
     }
@@ -34,15 +34,17 @@ class DemoModal extends Component {
 
         document.getElementsByTagName('html')[0].style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
-        let modalElem = document.querySelector('.demo-modal')[0];
+        let modalElem = document.querySelector("[class^='js-demo-modal']");
+
         modalElem.addEventListener('touchstart', this.preventTouchMove, false);
         modalElem.addEventListener('touchmove', this.preventTouchMove, false);
-        //
-        // document.addEventListener('scroll', (e) => {
-        //     e.preventDefault();
-        //     e.stopPropagation();
-        //     console.log('scroll!');
-        // }, false);
+        modalElem.addEventListener('scroll', this.preventTouchMove, false);
+
+        document.addEventListener('scroll', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('scroll!');
+        }, false);
 
     }
 

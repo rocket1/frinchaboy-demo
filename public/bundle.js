@@ -57474,7 +57474,7 @@ var DemoModal = function (_Component) {
      * @param e
      */
     DemoModal.preventTouchMove = function preventTouchMove(e) {
-        alert('foo');
+        console.log('modal scroll');
         e.preventDefault();
         e.stopPropagation();
     };
@@ -57500,15 +57500,17 @@ var DemoModal = function (_Component) {
 
         document.getElementsByTagName('html')[0].style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
-        var modalElem = document.querySelector('.demo-modal')[0];
+        var modalElem = document.querySelector("[class^='js-demo-modal']");
+
         modalElem.addEventListener('touchstart', this.preventTouchMove, false);
         modalElem.addEventListener('touchmove', this.preventTouchMove, false);
-        //
-        // document.addEventListener('scroll', (e) => {
-        //     e.preventDefault();
-        //     e.stopPropagation();
-        //     console.log('scroll!');
-        // }, false);
+        modalElem.addEventListener('scroll', this.preventTouchMove, false);
+
+        document.addEventListener('scroll', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('scroll!');
+        }, false);
     };
 
     /**
