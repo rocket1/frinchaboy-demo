@@ -44,8 +44,8 @@ class DemoModal extends Component {
 
             document.getElementsByTagName('html')[0].style.overflow = 'hidden';
             document.body.style.overflow = 'hidden';
-            document.body.addEventListener('touchstart', this.preventTouchMove, false);
-            document.body.addEventListener('touchmove', this.preventTouchMove, false);
+            this.addEventListener('touchstart', this.preventTouchMove, false);
+            this.addEventListener('touchmove', this.preventTouchMove, false);
 
             let screenshots = project.screenshots.map((src, index) => {
                 return <div key={index} styleName="screenshot"><img src={src}/></div>
@@ -61,8 +61,8 @@ class DemoModal extends Component {
         else {
             document.getElementsByTagName('html')[0].style.overflow = 'auto';
             document.body.style.overflow = 'auto';
-            document.body.removeEventListener('touchstart', this.preventTouchMove, false);
-            document.body.removeEventListener('touchmove', this.preventTouchMove, false);
+            this.removeEventListener('touchstart', this.preventTouchMove, false);
+            this.removeEventListener('touchmove', this.preventTouchMove, false);
         }
 
         let className = cx(styles['demo-modal'], {
