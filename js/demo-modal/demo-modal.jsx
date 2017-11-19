@@ -54,7 +54,7 @@ class DemoModal extends Component {
             content = (
                 <div className="content">
                     <div styleName="verbose">{project.verbose ? project.verbose : project.description}</div>
-                    {/*<Masonry options={masonryOptions} styleName="screenshots">{screenshots}</Masonry>*/}
+                    <Masonry options={masonryOptions} styleName="screenshots">{screenshots}</Masonry>
                 </div>
             );
         }
