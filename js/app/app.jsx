@@ -5,6 +5,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import DemoGrid from '../demo-grid/demo-grid';
 import DemoModal from '../demo-modal/demo-modal';
 import Header from '../ui/header';
+import Footer from '../ui/footer';
 import styles from './app.less';
 import keydown from 'react-keydown';
 
@@ -71,6 +72,7 @@ class App extends Component {
                                     <DemoGrid demoBoxClick={this.openModal}/>
                                 </div>
                             </div>
+                            <Footer linkClick={this.openModal}/>
                         </div>
                     </Route>
                 </BrowserRouter>

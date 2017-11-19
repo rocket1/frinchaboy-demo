@@ -31,10 +31,19 @@ class DemoModal extends Component {
      * @private
      */
     _lockScroll () {
+
         document.getElementsByTagName('html')[0].style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
-        document.body.addEventListener('touchstart', this.preventTouchMove, false);
-        document.body.addEventListener('touchmove', this.preventTouchMove, false);
+        let modalElem = document.querySelector('.demo-modal')[0];
+        modalElem.addEventListener('touchstart', this.preventTouchMove, false);
+        modalElem.addEventListener('touchmove', this.preventTouchMove, false);
+        //
+        // document.addEventListener('scroll', (e) => {
+        //     e.preventDefault();
+        //     e.stopPropagation();
+        //     console.log('scroll!');
+        // }, false);
+
     }
 
     /**
