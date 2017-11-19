@@ -12,6 +12,7 @@ class DemoModal extends Component {
      * @param e
      */
     static preventTouchMove(e) {
+        alert('foo');
         e.preventDefault();
         e.stopPropagation();
     }
