@@ -30,7 +30,7 @@ class DemoModal extends Component {
      *
      * @private
      */
-    _lockScroll () {
+    _lockScroll() {
 
         document.getElementsByTagName('html')[0].style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
@@ -40,23 +40,20 @@ class DemoModal extends Component {
         modalElem.addEventListener('touchmove', this.preventTouchMove, false);
         modalElem.addEventListener('scroll', this.preventTouchMove, false);
 
-        document.addEventListener('scroll', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            console.log('scroll!');
-        }, false);
-
+        window.addEventListener('scroll', this.preventTouchMove, false);
     }
 
     /**
      *
      * @private
      */
-    _unlockScroll () {
+    _unlockScroll() {
         document.getElementsByTagName('html')[0].style.overflow = 'auto';
         document.body.style.overflow = 'auto';
         document.body.removeEventListener('touchstart', this.preventTouchMove, false);
         document.body.removeEventListener('touchmove', this.preventTouchMove, false);
+
+        window.removeEventListener('scroll', this.preventTouchMove, false);
     }
 
     /**
