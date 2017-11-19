@@ -1,5 +1,6 @@
 const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
     context: __dirname,
@@ -7,11 +8,11 @@ const config = {
     devtool: process.env.NODE_ENV === 'development' ? 'cheap-eval-source-map' : false,
     output: {
         path: path.resolve(__dirname, 'public'),
-        filename: 'bundle.js',
+        filename: 'bundle.[hash].js',
         publicPath: '/public/'
     },
     devServer: {
-      //  hot: true,
+        //  hot: true,
         publicPath: '/public/',
         historyApiFallback: true
     },
@@ -27,11 +28,15 @@ const config = {
         reasons: true,
         chunks: false
     },
-   plugins: [
-      new UglifyJSPlugin(),
-       // new webpack.HotModuleReplacementPlugin(),
-       // new webpack.NamedModulesPlugin(),
-   ],
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: 'index-tpl.html',
+            filename: '../index.html'
+        }),
+        new UglifyJSPlugin()
+        // new webpack.HotModuleReplacementPlugin(),
+        // new webpack.NamedModulesPlugin(),
+    ],
     module: {
         rules: [
             {
