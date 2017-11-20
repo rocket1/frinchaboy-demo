@@ -17,6 +17,17 @@ class DemoGrid extends Component {
             let bgColor = demoConfig.colors[index % demoConfig.colors.length];
             return <DemoBox demoBoxClick={props.demoBoxClick} key={index} config={config} bgColor={bgColor}/>
         });
+        this._demoBoxes.unshift(
+            <div styleName="intro-box" key="intro-box">
+                <b>Jason Frinchaboy</b>
+                31 NE 76th Ave<br/>
+                Portland, Oregon 97213<br/><br/>
+
+                <a target="_blank" href="/public/jason-frinchaboy-resume.pdf">R‌ésum‌é</a>
+                <a target="_blank" href="https://github.com/rocket1">Github</a>
+                <a href="mailto:jazzmongrel@gmail.com">Contact</a>
+            </div>
+        );
     }
 
     /**

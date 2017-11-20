@@ -5,7 +5,7 @@
     "rgba(168,168,168,.96)",
     "rgba(71,62,63,.96)",
     "rgba(142,220,157,.96)",
-    "rgba(255,83,160,.96)",
+    "rgba(255,62,176,.96)",
     "rgba(239,113,38,.96)"
   ],
   "projects": [
@@ -30,6 +30,39 @@
         "/img/asylum-arts.resized.png",
         "/img/asylum-arts-2.resized.png",
         "/img/asylum-arts-4.resized.png"
+      ]
+    },
+    {
+      "title": "Whisperer (Google)",
+      "imgSrc": "/img/whisperer-2.resized.png",
+      "description": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools.",
+      "screenshots": [
+        "/img/whisperer.resized.png",
+        "/img/whisperer-2.resized.png"
+      ]
+    },
+    {
+      "title": "Whisperer v2 (Google)",
+      "imgSrc": "/img/whisperer-v2.png",
+      "description": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools.",
+      "screenshots": [
+        "/img/whisperer-v2.png"
+      ]
+    },
+    {
+      "title": "Abacus (Google)",
+      "imgSrc": "/img/abacus.png",
+      "description": "This tool was used by companies wishing to view metrics reagarding their internal Google online tools usage (e.g. Docs, Sheeets).",
+      "screenshots": [
+        "/img/abacus.png"
+      ]
+    },
+    {
+      "title": "Diva (Google)",
+      "imgSrc": "/img/diva.resized.png",
+      "description": "This was an inventory tool for retail.  It used RFID tracking of merchandise to accurately track inventory in-store or remote.",
+      "screenshots": [
+        "/img/diva.resized.png"
       ]
     },
     {

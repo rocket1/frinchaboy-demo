@@ -72,7 +72,7 @@ class App extends Component {
                                     <DemoGrid demoBoxClick={this.openModal}/>
                                 </div>
                             </div>
-                            <Footer linkClick={this.openModal}/>
+                            <Footer/>
                         </div>
                     </Route>
                 </BrowserRouter>

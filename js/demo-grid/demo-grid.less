@@ -1,3 +1,20 @@
+@import "../ui/mixins";
+@import "../ui/variables";
+
 .demo-grid {
+
   display: flex;
+
+  .intro-box {
+    display: flex;
+    flex-direction: column;
+    width: @box-width;
+    background-color: rgb(255,62,176);
+    padding: 12px;
+    color: white;
+
+    a {
+      color: white;
+    }
+  }
 }
