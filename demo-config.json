@@ -13,7 +13,7 @@
       "title": "PDX Flix",
       "imgSrc": "/img/pdxflix.png",
       "url": "http://www.pdxflix.com",
-      "description": "Foo I find most movie showtimes websites to be full of adverts and noise, and doesn't reflect the boutique theater culture of Portland.",
+      "description": "I find most movie showtimes websites to be full of adverts and noise, and doesn't reflect the boutique theater culture of Portland.",
       "tech": [
         "AngularJS"
       ],
