@@ -86147,6 +86147,10 @@ var Header = function (_Component) {
      * @returns {XML}
      */
     Header.prototype.render = function render() {
+
+        // filter: blur(5px);
+        // -webkit-filter: blur(5px);
+
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { styleName: 'header' },

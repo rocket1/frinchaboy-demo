@@ -9,6 +9,10 @@ class Header extends Component {
      * @returns {XML}
      */
     render() {
+
+        // filter: blur(5px);
+        // -webkit-filter: blur(5px);
+
         return (
             <div styleName="header">
                 <div styleName="hero">
