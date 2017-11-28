@@ -8,8 +8,8 @@ const config = {
     devtool: process.env.NODE_ENV === 'development' ? 'cheap-eval-source-map' : false,
     output: {
         path: path.resolve(__dirname, 'public'),
-        // filename: 'bundle.[hash].js',
-        filename: 'bundle.js',
+        filename: 'bundle.[hash].js',
+        // filename: 'bundle.js',
         publicPath: '/public/'
     },
     devServer: {
@@ -34,7 +34,7 @@ const config = {
             template: 'index-tpl.html',
             filename: '../index.html'
         }),
-        // new UglifyJSPlugin()
+        new UglifyJSPlugin()
         // new webpack.HotModuleReplacementPlugin(),
         // new webpack.NamedModulesPlugin(),
     ],
