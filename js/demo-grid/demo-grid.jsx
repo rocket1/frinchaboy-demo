@@ -22,13 +22,7 @@ class DemoGrid extends Component {
                 <b>Jason Frinchaboy</b><br/>
                 Computer Programmer.<br/>
                 Web Developer.<br/>
-                All around good guy.<br/><br/>
-
-                <a target="_blank" href="/public/jason-frinchaboy-resume.pdf">R‌ésum‌é</a>
-                <a target="_blank" href="https://github.com/rocket1/frinchaboy-demo">Source</a>
-                <a target="_blank" href="https://github.com/rocket1">Github</a>
-                <a target="_blank" href="https://www.linkedin.com/in/jason-frinchaboy-53207a52/">Linkedin</a>
-                <a href="mailto:jazzmongrel@gmail.com">Contact</a>
+                All around good guy.
             </div>
         );
     }

@@ -9,6 +9,7 @@
   .hero {
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -41,6 +42,11 @@
       flex-direction: column;
       align-items: center;
       color: white;
+      margin-bottom: 24px;
+
+      @media @mobile-small {
+        margin-bottom: 0;
+      }
 
       h1 {
         font-size: 3rem;

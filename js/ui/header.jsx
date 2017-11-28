@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './header.less';
+import Links from './links';
 
 class Header extends Component {
 
@@ -20,6 +21,7 @@ class Header extends Component {
                         <h1>Jason Frinchaboy</h1>
                         <h2>Greatest Hits</h2>
                     </div>
+                    <Links/>
                 </div>
             </div>
         )

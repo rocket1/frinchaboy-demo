@@ -52792,26 +52792,12 @@ var DemoGrid = function (_Component) {
                 null,
                 'Jason Frinchaboy'
             ),
-            '31 NE 76th Ave',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-            'Portland, Oregon 97213',
+            'Computer Programmer.',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+            'Web Developer.',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'a',
-                { target: '_blank', href: '/public/jason-frinchaboy-resume.pdf' },
-                'R\u200C\xE9sum\u200C\xE9'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'a',
-                { target: '_blank', href: 'https://github.com/rocket1' },
-                'Github'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'a',
-                { href: 'mailto:jazzmongrel@gmail.com' },
-                'Contact'
-            )
+            'All around good guy.'
         ));
         return _this;
     }
@@ -86123,11 +86109,13 @@ module.exports = factory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_css_modules___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_css_modules__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__header_less__ = __webpack_require__(887);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__header_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__header_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__links__ = __webpack_require__(925);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -86170,7 +86158,8 @@ var Header = function (_Component) {
                         null,
                         'Greatest Hits'
                     )
-                )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__links__["a" /* default */], null)
             )
         );
     };
@@ -86220,7 +86209,7 @@ exports = module.exports = __webpack_require__(70)(undefined);
 
 
 // module
-exports.push([module.i, ".js-ui-___header__transition-disabled___30HdT {\n  -webkit-transition: none !important;\n  -moz-transition: none !important;\n  -o-transition: none !important;\n  transition: none !important;\n}\n.js-ui-___header__flex-wrap___i1LKM {\n  flex-wrap: wrap;\n  display: -webkit-flex;\n  /* Safari */\n  -webkit-flex-wrap: wrap;\n  /* Safari 6.1+ */\n}\n.js-ui-___header__header___32IG8 {\n  z-index: 1;\n  position: relative;\n}\n.js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  height: 600px;\n  -webkit-transition-property: height;\n  -webkit-transition-duration: 0.3s;\n  -webkit-transition-timing-function: ease-in-out;\n  -moz-transition-property: height;\n  -moz-transition-duration: 0.3s;\n  -moz-transition-timing-function: ease-in-out;\n  -o-transition-property: height;\n  -o-transition-duration: 0.3s;\n  -o-transition-timing-function: ease-in-out;\n  transition-property: height;\n  transition-duration: 0.3s;\n  transition-timing-function: ease-in-out;\n  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(\"/img/hero-bg.jpg\");\n  -o-background-size: cover;\n  -moz-background-size: cover;\n  -webkit-background-size: cover;\n  background-size: cover;\n  background-position-y: top;\n  background-position-x: right;\n}\n@media all and (max-width: 767px) {\n  .js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg {\n    height: 350px;\n  }\n}\n.js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg .js-ui-___header__hero-text___3M7s4 {\n  padding: 24px;\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  align-items: center;\n  color: white;\n}\n.js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg .js-ui-___header__hero-text___3M7s4 h1 {\n  font-size: 3rem;\n  font-weight: bold;\n  margin: 0;\n}\n@media all and (max-width: 767px) {\n  .js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg .js-ui-___header__hero-text___3M7s4 h1 {\n    font-size: 2rem;\n  }\n}\n.js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg .js-ui-___header__hero-text___3M7s4 h2 {\n  font-size: 2rem;\n  font-weight: bold;\n  margin: 0;\n}\n@media all and (max-width: 767px) {\n  .js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg .js-ui-___header__hero-text___3M7s4 h2 {\n    font-size: 1.4rem;\n  }\n}\n", ""]);
+exports.push([module.i, ".js-ui-___header__transition-disabled___30HdT {\n  -webkit-transition: none !important;\n  -moz-transition: none !important;\n  -o-transition: none !important;\n  transition: none !important;\n}\n.js-ui-___header__flex-wrap___i1LKM {\n  flex-wrap: wrap;\n  display: -webkit-flex;\n  /* Safari */\n  -webkit-flex-wrap: wrap;\n  /* Safari 6.1+ */\n}\n.js-ui-___header__header___32IG8 {\n  z-index: 1;\n  position: relative;\n}\n.js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  height: 600px;\n  -webkit-transition-property: height;\n  -webkit-transition-duration: 0.3s;\n  -webkit-transition-timing-function: ease-in-out;\n  -moz-transition-property: height;\n  -moz-transition-duration: 0.3s;\n  -moz-transition-timing-function: ease-in-out;\n  -o-transition-property: height;\n  -o-transition-duration: 0.3s;\n  -o-transition-timing-function: ease-in-out;\n  transition-property: height;\n  transition-duration: 0.3s;\n  transition-timing-function: ease-in-out;\n  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(\"/img/hero-bg.jpg\");\n  -o-background-size: cover;\n  -moz-background-size: cover;\n  -webkit-background-size: cover;\n  background-size: cover;\n  background-position-y: top;\n  background-position-x: right;\n}\n@media all and (max-width: 767px) {\n  .js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg {\n    height: 350px;\n  }\n}\n.js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg .js-ui-___header__hero-text___3M7s4 {\n  padding: 24px;\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  align-items: center;\n  color: white;\n  margin-bottom: 24px;\n}\n@media all and (max-width: 767px) {\n  .js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg .js-ui-___header__hero-text___3M7s4 {\n    margin-bottom: 0;\n  }\n}\n.js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg .js-ui-___header__hero-text___3M7s4 h1 {\n  font-size: 3rem;\n  font-weight: bold;\n  margin: 0;\n}\n@media all and (max-width: 767px) {\n  .js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg .js-ui-___header__hero-text___3M7s4 h1 {\n    font-size: 2rem;\n  }\n}\n.js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg .js-ui-___header__hero-text___3M7s4 h2 {\n  font-size: 2rem;\n  font-weight: bold;\n  margin: 0;\n}\n@media all and (max-width: 767px) {\n  .js-ui-___header__header___32IG8 .js-ui-___header__hero___3fZBg .js-ui-___header__hero-text___3M7s4 h2 {\n    font-size: 1.4rem;\n  }\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -86242,11 +86231,13 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_css_modules___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_css_modules__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__footer_less__ = __webpack_require__(890);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__footer_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__footer_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__links__ = __webpack_require__(925);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -86263,40 +86254,13 @@ var Footer = function (_Component) {
 
     /**
      *
-     * @param evt
-     * @param project
-     * @param bgColor
-     */
-    Footer.prototype.doClick = function doClick(evt, project, bgColor) {
-        evt.preventDefault();
-        this.props.demoBoxClick(project, bgColor);
-    };
-
-    /**
-     *
      * @returns {XML}
      */
-
-
     Footer.prototype.render = function render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { styleName: 'footer' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'a',
-                { target: '_blank', href: '/public/jason-frinchaboy-resume.pdf' },
-                'R\u200C\xE9sum\u200C\xE9'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'a',
-                { target: '_blank', href: 'https://github.com/rocket1' },
-                'Github'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'a',
-                { href: 'mailto:jazzmongrel@gmail.com' },
-                'Contact'
-            )
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__links__["a" /* default */], null)
         );
     };
 
@@ -87772,6 +87736,126 @@ function methodWrapperScoped(_ref) {
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (methodWrapperScoped);
+
+/***/ }),
+/* 925 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_css_modules__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_css_modules___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_css_modules__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__links_less__ = __webpack_require__(926);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__links_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__links_less__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var Links = function (_Component) {
+    _inherits(Links, _Component);
+
+    function Links() {
+        _classCallCheck(this, Links);
+
+        return _possibleConstructorReturn(this, _Component.apply(this, arguments));
+    }
+
+    /**
+     *
+     * @returns {XML}
+     */
+    Links.prototype.render = function render() {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { styleName: 'links' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'a',
+                { target: '_blank', href: '/public/jason-frinchaboy-resume.pdf' },
+                'R\u200C\xE9sum\u200C\xE9'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'a',
+                { target: '_blank', href: 'https://github.com/rocket1/frinchaboy-demo' },
+                'Source'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'a',
+                { target: '_blank', href: 'https://github.com/rocket1' },
+                'Github'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'a',
+                { target: '_blank', href: 'https://www.linkedin.com/in/jason-frinchaboy-53207a52/' },
+                'Linkedin'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'a',
+                { href: 'mailto:jazzmongrel@gmail.com' },
+                'Contact'
+            )
+        );
+    };
+
+    return Links;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_1_react_css_modules___default()(Links, __WEBPACK_IMPORTED_MODULE_2__links_less___default.a));
+
+/***/ }),
+/* 926 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(927);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"sourceMap":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(71)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]!../../node_modules/less-loader/dist/cjs.js!./links.less", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]!../../node_modules/less-loader/dist/cjs.js!./links.less");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 927 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(70)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".js-ui-___links__transition-disabled___1jfdQ {\n  -webkit-transition: none !important;\n  -moz-transition: none !important;\n  -o-transition: none !important;\n  transition: none !important;\n}\n.js-ui-___links__flex-wrap___2OkxU {\n  flex-wrap: wrap;\n  display: -webkit-flex;\n  /* Safari */\n  -webkit-flex-wrap: wrap;\n  /* Safari 6.1+ */\n}\n.js-ui-___links__links___36jLu {\n  display: flex;\n}\n@media all and (max-width: 767px) {\n  .js-ui-___links__links___36jLu {\n    flex-direction: column;\n    align-items: center;\n  }\n}\n.js-ui-___links__links___36jLu a {\n  color: white;\n  padding: 0 12px;\n}\n@media all and (max-width: 767px) {\n  .js-ui-___links__links___36jLu a {\n    padding: 0;\n    margin-top: 12px;\n  }\n}\n", ""]);
+
+// exports
+exports.locals = {
+	"transition-disabled": "js-ui-___links__transition-disabled___1jfdQ",
+	"flex-wrap": "js-ui-___links__flex-wrap___2OkxU",
+	"links": "js-ui-___links__links___36jLu"
+};
 
 /***/ })
 /******/ ]);
