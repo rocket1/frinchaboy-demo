@@ -11,6 +11,7 @@
       "title": "PDX Flix",
       "imgSrc": "/img/pdxflix.png",
       "url": "http://www.pdxflix.com",
+      "urlText": "www.pdxflix.com",
       "description": "I find most movie showtimes websites to be full of adverts and noise, and doesn't reflect the boutique theater culture of Portland.",
       "tech": [
         "AngularJS"
@@ -23,6 +24,7 @@
       "title": "Asylum Arts",
       "imgSrc": "/img/asylum-arts.resized.png",
       "url": "http://www.asylum-arts.org",
+      "urlText": "www.asylum-arts.org",
       "description": "Asylum Arts supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
       "screenshots": [
         "/img/asylum-arts.resized.png",
@@ -66,6 +68,8 @@
     {
       "title": "Junkmedia",
       "imgSrc": "/img/junkmedia.png",
+      "url": "https://web.archive.org/web/20081019214827/http://www.junkmedia.org:80/index.php",
+      "urlText": "archived demo",
       "description": "Junkmedia was an online music review magazine founded in 2002.",
       "screenshots": [
         "/img/junkmedia.png"
@@ -74,6 +78,8 @@
     {
       "title": "The Hilt",
       "imgSrc": "/img/hilt.resized.png",
+      "url": "https://web.archive.org/web/20090922214742/https://www.thehiltbar.com/",
+      "urlText": "archived demo",
       "description": "The Hilt is a popular bar on Alberta St. in Portland, Oregon.",
       "screenshots": [
         "/img/hilt.resized.png"
@@ -82,6 +88,8 @@
     {
       "title": "Mancala",
       "imgSrc": "/img/mancala.png",
+      "url": "http://mancala2.nfshost.com/",
+      "urlText": "demo",
       "description": "An attempt to port my college Artificial Intelligence project from C++ to JS.",
       "screenshots": [
         "/img/mancala.png"
@@ -106,7 +114,6 @@
     {
       "title": "MIGA",
       "imgSrc": "/img/miga.resized.png",
-      "url": "http://www.pdxflix.com",
       "description": "Make Israel Great Again (MIGA) supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
       "screenshots": [
         "/img/miga.resized.png"
@@ -115,7 +122,8 @@
     {
       "title": "Slide Viewer",
       "imgSrc": "/img/slide-viewer.resized.png",
-      "url": "http://www.asylum-arts.org",
+      "url": "http://ceuonline.nfshost.com/",
+      "urlText": "demo",
       "description": "Slide viewer is for delivering online tests.",
       "screenshots": [
         "/img/slide-viewer.resized.png"
@@ -124,7 +132,6 @@
     {
       "title": "Six Points Fellowship",
       "imgSrc": "/img/6points.png",
-      "url": "http://www.asylum-arts.org",
       "description": "Six Points Fellowship supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
       "screenshots": [
         "/img/6points.png"
@@ -133,7 +140,6 @@
     {
       "title": "Six Points Fellowship v2",
       "imgSrc": "/img/6points-v2.resized.png",
-      "url": "http://www.asylum-arts.org",
       "description": "Six Points Fellowship supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
       "screenshots": [
         "/img/6points-v2.resized.png",
@@ -144,7 +150,8 @@
     {
       "title": "Ben Lee (Musician)",
       "imgSrc": "/img/ben-lee.resized.png",
-      "url": "http://www.asylum-arts.org",
+      "url": "https://web.archive.org/web/20060614224957/http://www.ben-lee.com:80/main_page.php",
+      "urlText": "archived demo",
       "description": "Musician from Australia.",
       "screenshots": [
         "/img/ben-lee.resized.png",
@@ -154,7 +161,6 @@
     {
       "title": "The Peels (Band)",
       "imgSrc": "/img/the-peels.png",
-      "url": "http://www.asylum-arts.org",
       "description": "Long defunct band that was briefly signed to Columbia records.",
       "screenshots": [
         "/img/the-peels.png"
@@ -163,7 +169,6 @@
     {
       "title": "Combio",
       "imgSrc": "/img/combio.png",
-      "url": "http://www.asylum-arts.org",
       "description": "Combio was a web-portal company that I worked for in 2000 just before and leading up to the Great Internet Crash.",
       "screenshots": [
         "/img/combio.png"
@@ -172,7 +177,6 @@
     {
       "title": "Van Diemen's Land",
       "imgSrc": "/img/van-diemen.png",
-      "url": "http://www.asylum-arts.org",
       "description": "Van Diemen's land was an Australian rock band collective.",
       "screenshots": [
         "/img/van-diemen.png"
@@ -181,7 +185,6 @@
     {
       "title": "Find Your Junk",
       "imgSrc": "/img/fyj.png",
-      "url": "http://www.asylum-arts.org",
       "description": "A public lost and found website.",
       "screenshots": [
         "/img/pdxflix.png"
@@ -190,7 +193,8 @@
     {
       "title": "Machine Vision Products",
       "imgSrc": "/img/mvp.png",
-      "url": "http://www.asylum-arts.org",
+      "url": "http://www.visionpro.com",
+      "urlText": "www.visionpro.com",
       "description": "MVP builds Automated Optical Inspection machines for circuit board assembly production.",
       "screenshots": [
         "/img/mvp.png"
@@ -199,7 +203,6 @@
     {
       "title": "Nathan James & Ben Hernandez (Musicians)",
       "imgSrc": "/img/nathan-james.png",
-      "url": "http://www.asylum-arts.org",
       "description": "Nathan James is a world-class blues musician.",
       "screenshots": [
         "/img/nathan-james.png"
@@ -208,7 +211,6 @@
     {
       "title": "Nathan James (Musician)",
       "imgSrc": "/img/nathan-james-v2.png",
-      "url": "http://www.asylum-arts.org",
       "description": "Nathan James is a world-class blues musician.",
       "screenshots": [
         "/img/nathan-james-v2.png"
@@ -217,7 +219,6 @@
     {
       "title": "LNWIA",
       "imgSrc": "/img/lnwia.png",
-      "url": "http://www.asylum-arts.org",
       "description": "LNWIA is an insurance company based in Oceanside, CA.",
       "screenshots": [
         "/img/lnwia.png"

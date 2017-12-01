@@ -13,7 +13,7 @@ class DemoBox extends Component {
 
         super(props);
 
-        let project = props.config;
+        const project = props.config;
 
         const ImageDiv = styled.div`
             background-image: url(${project.imgSrc});
@@ -23,11 +23,20 @@ class DemoBox extends Component {
             background-color: ${props.bgColor};
         `;
 
+        const url = project.url ? (
+            <div styleName="url">
+                <a target="_blank" href={project.url} onClick={(e) => {
+                    e.stopPropagation();
+                }}>{project.urlText ? project.urlText : project.url}</a>
+            </div>
+        ) : null;
+
         this.StyledDemoBox = (
             <div styleName="demo-box" onClick={(evt) => this.doClick(evt, project, props.bgColor)}>
                 <ImageDiv styleName="demo-img"/>
                 <InfoDiv styleName="info-div">
                     <div styleName="title">{project.title}</div>
+                    {url}
                     <div styleName="description">{project.description}</div>
                 </InfoDiv>
             </div>
@@ -43,13 +52,6 @@ class DemoBox extends Component {
     doClick(evt, project, bgColor) {
         evt.preventDefault();
         this.props.demoBoxClick(project, bgColor);
-    }
-
-    /**
-     *
-     */
-    componentDidMount() {
-       // console.log('mounted: ' + this.props.config.title);
     }
 
     /**
