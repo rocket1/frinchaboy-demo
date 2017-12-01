@@ -106,6 +106,8 @@
     {
       "title": "O/M Studio",
       "imgSrc": "/img/om.resized.png",
+      "url": "http://omstudio.co/",
+      "urlText": "omstudio.co",
       "description": "O/M is a design studio based in San Francisco.",
       "screenshots": [
         "/img/om.resized.png"
