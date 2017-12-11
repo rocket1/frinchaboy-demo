@@ -7,6 +7,7 @@ import DemoModal from '../demo-modal/demo-modal';
 import Header from '../ui/header';
 import Footer from '../ui/footer';
 import styles from './app.less';
+import cx from 'classnames';
 import keydown from 'react-keydown';
 
 class App extends Component {
@@ -21,12 +22,29 @@ class App extends Component {
 
         this.state = {
             project: null,
-            modalBgColor: null
+            modalBgColor: null,
+            contentReady: false
         };
 
         this.openModal = this.openModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
     }
+
+    /**
+     *
+     */
+    componentDidMount() {
+
+        let img = new Image();
+
+        img.onload = () => {
+            this.setState({
+                contentReady: true
+            })
+        };
+
+        img.src = "/img/hero-bg.jpg";
+    };
 
     /**
      *
@@ -59,11 +77,16 @@ class App extends Component {
      * @returns {XML}
      */
     render() {
+
+        let className = cx(styles['app-body'], {
+            [styles.show]: this.state.contentReady
+        });
+
         return (
             <MuiThemeProvider>
                 <BrowserRouter>
                     <Route exact path="/">
-                        <div>
+                        <div styleName="app-body" className={className}>
                             <DemoModal project={this.state.project} closeFunc={this.closeModal}
                                        bgColor={this.state.modalBgColor}/>
                             <Header/>
