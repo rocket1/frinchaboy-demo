@@ -14,7 +14,9 @@
       "urlText": "www.pdxflix.com",
       "description": "I find most movie showtimes websites to be full of adverts and noise, and doesn't reflect the boutique theater culture of Portland.",
       "tech": [
-        "AngularJS"
+        "AngularJS",
+        "HTML",
+        "LESS/CSS"
       ],
       "screenshots": [
         "/img/pdxflix.png"
@@ -26,6 +28,15 @@
       "url": "http://www.asylum-arts.org",
       "urlText": "www.asylum-arts.org",
       "description": "Asylum Arts supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
+      "tech": [
+        "Yii",
+        "AngularJS",
+        "React",
+        "HTML",
+        "LESS/CSS",
+        "MySQL",
+        "PHP"
+      ],
       "screenshots": [
         "/img/asylum-arts.resized.png",
         "/img/asylum-arts-2.resized.png",
@@ -36,6 +47,11 @@
       "title": "Whisperer (Google)",
       "imgSrc": "/img/whisperer-2.resized.png",
       "description": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools.",
+      "tech": [
+        "AngularJS",
+        "HTML",
+        "LESS/CSS"
+      ],
       "screenshots": [
         "/img/whisperer.resized.png",
         "/img/whisperer-2.resized.png"
@@ -45,6 +61,11 @@
       "title": "Whisperer v2 (Google)",
       "imgSrc": "/img/whisperer-v2.png",
       "description": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools.",
+      "tech": [
+        "AngularJS",
+        "HTML",
+        "LESS/CSS"
+      ],
       "screenshots": [
         "/img/whisperer-v2.png"
       ]
@@ -53,6 +74,11 @@
       "title": "Abacus (Google)",
       "imgSrc": "/img/abacus.png",
       "description": "This tool was used by companies wishing to view metrics regarding their internal Google online tools usage (e.g. Docs, Sheeets).",
+      "tech": [
+        "AngularJS",
+        "HTML",
+        "LESS/CSS"
+      ],
       "screenshots": [
         "/img/abacus.png"
       ]
@@ -61,8 +87,30 @@
       "title": "Diva (Google)",
       "imgSrc": "/img/diva.resized.png",
       "description": "This was an inventory tool for retail.  It used RFID tracking of merchandise to accurately track inventory in-store or remote.",
+      "tech": [
+        "AngularJS",
+        "HTML",
+        "LESS/CSS"
+      ],
       "screenshots": [
         "/img/diva.resized.png"
+      ]
+    },
+    {
+      "title": "MyWedding",
+      "imgSrc": "/img/mywedding.png",
+      "url": "http://www.mywedding.com",
+      "urlText": "www.mywedding.com",
+      "description": "MyWedding is an internationally renowned wedding planning site.  I worked there for two years doing all things web development related.",
+      "tech": [
+        "JavaScript/JQuery",
+        "HTML",
+        "CSS",
+        "Zend Framework",
+        "MySQL"
+      ],
+      "screenshots": [
+        "/img/mywedding-1.png"
       ]
     },
     {
@@ -71,6 +119,13 @@
       "url": "https://web.archive.org/web/20081019214827/http://www.junkmedia.org:80/index.php",
       "urlText": "archived demo",
       "description": "Junkmedia was an online music review magazine founded in 2002.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "PHP",
+        "MySQL"
+      ],
       "screenshots": [
         "/img/junkmedia.png"
       ]
@@ -81,6 +136,11 @@
       "url": "https://web.archive.org/web/20090922214742/https://www.thehiltbar.com/",
       "urlText": "archived demo",
       "description": "The Hilt is a popular bar on Alberta St. in Portland, Oregon.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
       "screenshots": [
         "/img/hilt.resized.png"
       ]
@@ -91,6 +151,11 @@
       "url": "http://mancala2.nfshost.com/",
       "urlText": "demo",
       "description": "An attempt to port my college Artificial Intelligence project from C++ to JS.",
+      "tech": [
+        "AngularJS",
+        "HTML",
+        "LESS/CSS"
+      ],
       "screenshots": [
         "/img/mancala.png"
       ]
@@ -99,6 +164,12 @@
       "title": "North American Repower",
       "imgSrc": "/img/nar.png",
       "description": "NAR develops diesel-to-natural gas conversion kits for semi trucks. I built an installer system that allows secure installation records and for the EPA to search for vehicle history by VIN.",
+      "tech": [
+        "Laravel",
+        "AngularJS",
+        "HTML",
+        "LESS/CSS"
+      ],
       "screenshots": [
         "/img/nar.png"
       ]
@@ -109,6 +180,11 @@
       "url": "http://omstudio.co/",
       "urlText": "omstudio.co",
       "description": "O/M is a design studio based in San Francisco.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "LESS/CSS"
+      ],
       "screenshots": [
         "/img/om.resized.png"
       ]
@@ -117,6 +193,14 @@
       "title": "MIGA",
       "imgSrc": "/img/miga.resized.png",
       "description": "Make Israel Great Again (MIGA) supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
+      "tech": [
+        "Yii",
+        "AngularJS",
+        "HTML",
+        "LESS/CSS",
+        "MySQL",
+        "PHP"
+      ],
       "screenshots": [
         "/img/miga.resized.png"
       ]
@@ -127,6 +211,11 @@
       "url": "http://ceuonline.nfshost.com/",
       "urlText": "demo",
       "description": "Slide viewer is for delivering online tests.",
+      "tech": [
+        "React",
+        "HTML",
+        "LESS/CSS"
+      ],
       "screenshots": [
         "/img/slide-viewer.resized.png"
       ]
@@ -135,6 +224,13 @@
       "title": "Six Points Fellowship",
       "imgSrc": "/img/6points.png",
       "description": "Six Points Fellowship supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "LESS/CSS",
+        "PHP",
+        "MySQL"
+      ],
       "screenshots": [
         "/img/6points.png"
       ]
@@ -143,6 +239,13 @@
       "title": "Six Points Fellowship v2",
       "imgSrc": "/img/6points-v2.resized.png",
       "description": "Six Points Fellowship supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "LESS/CSS",
+        "PHP",
+        "MySQL"
+      ],
       "screenshots": [
         "/img/6points-v2.resized.png",
         "/img/6points-v2-2.resized.png",
@@ -155,6 +258,13 @@
       "url": "https://web.archive.org/web/20060614224957/http://www.ben-lee.com:80/main_page.php",
       "urlText": "archived demo",
       "description": "Musician from Australia.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "LESS/CSS",
+        "PHP",
+        "MySQL"
+      ],
       "screenshots": [
         "/img/ben-lee.resized.png",
         "/img/ben-lee-2.resized.png"
@@ -164,6 +274,13 @@
       "title": "The Peels (Band)",
       "imgSrc": "/img/the-peels.png",
       "description": "Long defunct band that was briefly signed to Columbia records.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "PHP",
+        "MySQL"
+      ],
       "screenshots": [
         "/img/the-peels.png"
       ]
@@ -172,6 +289,12 @@
       "title": "Combio",
       "imgSrc": "/img/combio.png",
       "description": "Combio was a web-portal company that I worked for in 2000 just before and leading up to the Great Internet Crash.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "MySQL"
+      ],
       "screenshots": [
         "/img/combio.png"
       ]
@@ -180,6 +303,13 @@
       "title": "Van Diemen's Land",
       "imgSrc": "/img/van-diemen.png",
       "description": "Van Diemen's land was an Australian rock band collective.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "PHP",
+        "MySQL"
+      ],
       "screenshots": [
         "/img/van-diemen.png"
       ]
@@ -188,6 +318,13 @@
       "title": "Find Your Junk",
       "imgSrc": "/img/fyj.png",
       "description": "A public lost and found website.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "PHP",
+        "MySQL"
+      ],
       "screenshots": [
         "/img/pdxflix.png"
       ]
@@ -198,6 +335,13 @@
       "url": "http://www.visionpro.com",
       "urlText": "www.visionpro.com",
       "description": "MVP builds Automated Optical Inspection machines for circuit board assembly production.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "PHP",
+        "MySQL"
+      ],
       "screenshots": [
         "/img/mvp.png"
       ]
@@ -206,6 +350,13 @@
       "title": "Nathan James & Ben Hernandez (Musicians)",
       "imgSrc": "/img/nathan-james.png",
       "description": "Nathan James is a world-class blues musician.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "PHP",
+        "MySQL"
+      ],
       "screenshots": [
         "/img/nathan-james.png"
       ]
@@ -214,6 +365,13 @@
       "title": "Nathan James (Musician)",
       "imgSrc": "/img/nathan-james-v2.png",
       "description": "Nathan James is a world-class blues musician.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "PHP",
+        "MySQL"
+      ],
       "screenshots": [
         "/img/nathan-james-v2.png"
       ]
@@ -222,6 +380,11 @@
       "title": "LNWIA",
       "imgSrc": "/img/lnwia.png",
       "description": "LNWIA is an insurance company based in Oceanside, CA.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
       "screenshots": [
         "/img/lnwia.png"
       ]

@@ -50,11 +50,22 @@ class DemoModal extends Component {
      */
     render() {
 
-        let project = this.props.project;
+        const project = this.props.project;
+        const title = project && project.title ? project.title : '';
+        const tech = project && project.tech ? project.tech.join(', ') : '';
+
+        const url = project && project.url ? (
+            <div styleName="url">
+                <a target="_blank" href={project.url} onClick={(e) => {
+                    e.stopPropagation();
+                }}>{project.urlText ? project.urlText : project.url}</a>
+            </div>
+        ) : null;
+
         let content = null;
 
         // TODO: Wish this was in the CSS, but didn't work there :(
-        let masonryOptions = {
+        const masonryOptions = {
             gutter: 24
         };
 
@@ -68,7 +79,9 @@ class DemoModal extends Component {
 
             content = (
                 <div className="content">
+                    {url}
                     <div styleName="verbose">{project.verbose ? project.verbose : project.description}</div>
+                    <div styleName="tech">{tech}</div>
                     <Masonry options={masonryOptions} styleName="screenshots">{screenshots}</Masonry>
                 </div>
             );
@@ -82,11 +95,12 @@ class DemoModal extends Component {
         });
 
         return (
+
             <div className={className} style={{backgroundColor: this.props.bgColor}}>
                 <div styleName="modal-wrapper">
                     <div styleName="toolbar-wrapper">
                         <div styleName="toolbar">
-                            <h2>{project ? project.title : ''}</h2>
+                            <h2>{title}</h2>
                             <a onClick={(e) => this.closeModal(e)} href>
                                 <Close/>
                             </a>
