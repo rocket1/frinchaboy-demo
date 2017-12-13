@@ -20,7 +20,8 @@ class DemoBox extends Component {
         `;
 
         const InfoDiv = styled.div`
-            background-color: ${props.bgColor};
+            background-color: ${props.bgColor[0]};
+            box-shadow: inset 0 0 5em 1em ${props.bgColor[1]};
         `;
 
         const url = project.url ? (

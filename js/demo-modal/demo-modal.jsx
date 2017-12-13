@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './demo-modal.less';
+import styled from 'styled-components'
 import cx from "classnames";
 import Close from 'react-material-icons/icons/navigation/close';
 import Masonry from 'react-masonry-component';
@@ -94,24 +95,35 @@ class DemoModal extends Component {
             [styles.show]: !!project
         });
 
-        return (
+        if (this.props.bgColor) {
 
-            <div className={className} style={{backgroundColor: this.props.bgColor}}>
-                <div styleName="modal-wrapper">
-                    <div styleName="toolbar-wrapper">
-                        <div styleName="toolbar">
-                            <h2>{title}</h2>
-                            <a onClick={(e) => this.closeModal(e)} href>
-                                <Close/>
-                            </a>
+            const ModalDiv = styled.div`
+                background-color: ${this.props.bgColor[0]};
+                box-shadow: inset 0 0 5em 1em ${this.props.bgColor[1]};
+            `;
+
+            return (
+
+                <ModalDiv className={className}>
+                    <div styleName="modal-wrapper">
+                        <div styleName="toolbar-wrapper">
+                            <div styleName="toolbar">
+                                <h2>{title}</h2>
+                                <a onClick={(e) => this.closeModal(e)} href>
+                                    <Close/>
+                                </a>
+                            </div>
+                        </div>
+                        <div styleName="body">
+                            {content}
                         </div>
                     </div>
-                    <div styleName="body">
-                        {content}
-                    </div>
-                </div>
-            </div>
-        );
+                </ModalDiv>
+            );
+        }
+        else {
+            return null;
+        }
     }
 }
 
