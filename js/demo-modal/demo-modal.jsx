@@ -104,7 +104,7 @@ class DemoModal extends Component {
 
             return (
 
-                <ModalDiv className={className}>
+                <div className={className} style={{backgroundColor: this.props.bgColor}}>
                     <div styleName="modal-wrapper">
                         <div styleName="toolbar-wrapper">
                             <div styleName="toolbar">
@@ -118,7 +118,7 @@ class DemoModal extends Component {
                             {content}
                         </div>
                     </div>
-                </ModalDiv>
+                </div>
             );
         }
         else {

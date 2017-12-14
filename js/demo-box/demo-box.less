@@ -50,14 +50,26 @@
   will-change: transform, opacity;
 
   &:hover {
+
     cursor: pointer;
     transform: scale(1.14);
     z-index: 2;
     @t: .2s;
     -webkit-transition-duration: @t; /* Safari */
     transition-duration: @t;
-
     // !!!!! Crazy ass property helps chrome with the animations... maybe!! Works great in Safari :P :P :P
     will-change: transform, opacity;
+
+
+    @media @mobile-small {
+      cursor: default;
+      transform: scale(1);
+      z-index: 1;
+      @t: 0;
+      -webkit-transition-duration: @t; /* Safari */
+      transition-duration: @t;
+      // !!!!! Crazy ass property helps chrome with the animations... maybe!! Works great in Safari :P :P :P
+      will-change: 0;
+    }
   }
 }
