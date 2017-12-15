@@ -32,9 +32,16 @@ class DemoGrid extends Component {
      * @returns {XML}
      */
     render() {
+
+        const sizes = [
+            {columns: 1, gutter: 20},
+            {mq: '768px', columns: 2, gutter: 20},
+            {mq: '1024px', columns: 3, gutter: 20}
+        ];
+
         return (
             <div styleName="demo-grid">
-                <MasonryInfiniteScroller loadMore={() => false}>{this._demoBoxes}</MasonryInfiniteScroller>
+                <MasonryInfiniteScroller sizes={sizes} loadMore={() => false}>{this._demoBoxes}</MasonryInfiniteScroller>
             </div>
         );
     }

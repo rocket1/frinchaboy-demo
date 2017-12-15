@@ -34,6 +34,8 @@ class DemoModal extends Component {
     _lockScroll() {
         document.getElementsByTagName('html')[0].style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+        document.body.scroll = "no"; // ie only
     }
 
     /**
@@ -42,6 +44,8 @@ class DemoModal extends Component {
      */
     _unlockScroll() {
         document.getElementsByTagName('html')[0].style.overflow = 'auto';
+        document.documentElement.style.overflow = 'auto';  // firefox, chrome
+        document.body.scroll = "yes"; // ie only
         document.body.style.overflow = 'auto';
     }
 
