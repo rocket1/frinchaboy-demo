@@ -9,6 +9,7 @@ import Footer from '../ui/footer';
 import styles from './app.less';
 import cx from 'classnames';
 import keydown from 'react-keydown';
+import WebFont from 'webfontloader';
 
 class App extends Component {
 
@@ -23,7 +24,8 @@ class App extends Component {
         this.state = {
             project: null,
             modalBgColor: null,
-            contentReady: false
+            contentReady: false,
+            fontReady: false
         };
 
         this.openModal = this.openModal.bind(this);
@@ -44,6 +46,17 @@ class App extends Component {
         };
 
         img.src = "/img/hero-bg.jpg";
+
+        WebFont.load({
+            google: {
+                families: ['Noto Sans']
+            },
+            active: () => {
+                this.setState({
+                    fontReady: true
+                })
+            }
+        });
     };
 
     /**
@@ -78,8 +91,10 @@ class App extends Component {
      */
     render() {
 
+        const ready = this.state.contentReady && this.state.fontReady;
+
         let className = cx(styles['app-body'], {
-            [styles.show]: this.state.contentReady
+            [styles.show]: ready
         });
 
         return (
@@ -92,7 +107,7 @@ class App extends Component {
                             <Header/>
                             <div styleName="content">
                                 <div styleName="content-inner">
-                                    <DemoGrid demoBoxClick={this.openModal}/>
+                                    <DemoGrid ready={ready} demoBoxClick={this.openModal}/>
                                 </div>
                             </div>
                             <Footer/>

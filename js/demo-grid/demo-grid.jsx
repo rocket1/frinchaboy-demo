@@ -12,11 +12,14 @@ class DemoGrid extends Component {
      * @param props
      */
     constructor(props) {
+
         super(props);
+
         this._demoBoxes = demoConfig.projects.map((config, index) => {
             let bgColor = demoConfig.colors[index % demoConfig.colors.length];
             return <DemoBox demoBoxClick={props.demoBoxClick} key={index} config={config} bgColor={bgColor}/>
         });
+
         this._demoBoxes.unshift(
             <div styleName="intro-box" key="intro-box">
                 <b>Jason Frinchaboy</b><br/>
@@ -39,11 +42,12 @@ class DemoGrid extends Component {
             {mq: '1024px', columns: 3, gutter: 20}
         ];
 
-        return (
+        return this.props.ready ? (
             <div styleName="demo-grid">
-                <MasonryInfiniteScroller sizes={sizes} loadMore={() => false}>{this._demoBoxes}</MasonryInfiniteScroller>
+                <MasonryInfiniteScroller sizes={sizes}
+                                         loadMore={() => false}>{this._demoBoxes}</MasonryInfiniteScroller>
             </div>
-        );
+        ) : null;
     }
 }
 

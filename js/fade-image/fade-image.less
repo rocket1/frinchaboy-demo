@@ -4,11 +4,13 @@
 
   visibility: hidden;
   opacity: 0;
+  .blur(20px);
 
-  .transition(~"visibility, opacity", 1.0s);
+  .transition(~"visibility, opacity", .6s);
 
   &.show {
     visibility: visible;
     opacity: 1;
+    .blur(0px);
   }
 }
