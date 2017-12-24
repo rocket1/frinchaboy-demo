@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import cx from "classnames";
 import Close from 'react-material-icons/icons/navigation/close';
 import Masonry from 'react-masonry-component';
+import FadeImage from '../fade-image/fade-image';
 
 class DemoModal extends Component {
 
@@ -78,8 +79,8 @@ class DemoModal extends Component {
 
             this._lockScroll();
 
-            let screenshots = project.screenshots.map((src, index) => {
-                return <div key={index} styleName="screenshot"><img src={src}/></div>
+            const screenshots = project.screenshots.map((src, index) => {
+                return <div key={index} styleName="screenshot"><FadeImage src={src}/></div>
             });
 
             content = (
@@ -95,16 +96,16 @@ class DemoModal extends Component {
             this._unlockScroll();
         }
 
-        let className = cx(styles['demo-modal'], {
+        const className = cx(styles['demo-modal'], {
             [styles.show]: !!project
         });
 
         if (this.props.bgColor) {
 
-            const ModalDiv = styled.div`
-                background-color: ${this.props.bgColor[0]};
-                box-shadow: inset 0 0 5em 1em ${this.props.bgColor[1]};
-            `;
+            // const ModalDiv = styled.div`
+            //     background-color: ${this.props.bgColor[0]};
+            //     box-shadow: inset 0 0 5em 1em ${this.props.bgColor[1]};
+            // `;
 
             return (
 
