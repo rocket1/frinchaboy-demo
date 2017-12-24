@@ -88,7 +88,7 @@
     {
       "title": "Abacus (Google)",
       "imgSrc": "/img/abacus.png",
-      "description": "This tool was used by companies wishing to view metrics regarding their internal Google online tools usage (e.g. Docs, Sheeets).",
+      "description": "This tool was used by companies wishing to view metrics regarding their internal Google online tools usage (e.g. Docs, Sheets).",
       "tech": [
         "AngularJS",
         "HTML",

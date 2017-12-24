@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import CSSModules from 'react-css-modules';
 import DemoBox from '../demo-box/demo-box';
-import demoConfig from '../../demo-config.json';
+import demoConfig from '../../config/demo-config.json';
 import styles from './demo-grid.less';
 import MasonryInfiniteScroller from 'react-masonry-infinite';
 
