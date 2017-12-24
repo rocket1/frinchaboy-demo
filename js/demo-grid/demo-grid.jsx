@@ -37,9 +37,9 @@ class DemoGrid extends Component {
     render() {
 
         const sizes = [
-            {columns: 1, gutter: 20},
-            {mq: '768px', columns: 2, gutter: 20},
-            {mq: '1024px', columns: 3, gutter: 20}
+            {columns: 1, gutter: 24},
+            {mq: '768px', columns: 2, gutter: 24},
+            {mq: '1024px', columns: 3, gutter: 24}
         ];
 
         return this.props.ready ? (

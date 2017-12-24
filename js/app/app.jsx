@@ -49,7 +49,7 @@ class App extends Component {
 
         WebFont.load({
             google: {
-                families: ['Noto Sans']
+                families: ['Noto Sans', 'Merriweather']
             },
             active: () => {
                 this.setState({
