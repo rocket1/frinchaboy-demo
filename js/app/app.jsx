@@ -37,7 +37,7 @@ class App extends Component {
      */
     componentDidMount() {
 
-        let img = new Image();
+        const img = new Image();
 
         img.onload = () => {
             this.setState({
@@ -93,7 +93,7 @@ class App extends Component {
 
         const ready = this.state.contentReady && this.state.fontReady;
 
-        let className = cx(styles['app-body'], {
+        const className = cx(styles['app-body'], {
             [styles.show]: ready
         });
 
