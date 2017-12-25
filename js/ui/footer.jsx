@@ -97,8 +97,14 @@ class Footer extends Component {
             '-webkit-filter': 'blur(' + blurAmount + ')'
         };
 
+        // return (
+        //     <div styleName="footer" style={blurStyle}>
+        //         <Links/>
+        //     </div>
+        // )
+
         return (
-            <div styleName="footer" style={blurStyle}>
+            <div styleName="footer">
                 <Links/>
             </div>
         )
