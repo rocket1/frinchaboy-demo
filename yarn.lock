@@ -5112,6 +5112,13 @@ react-transition-group@^1.1.2:
     prop-types "^15.5.6"
     warning "^3.0.0"
 
+react-window-decorators@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/react-window-decorators/-/react-window-decorators-0.2.1.tgz#dea65aa6c0e1860c15294676d6160858a78e045b"
+  dependencies:
+    prop-types "^15.5.8"
+    window-scroll-manager "^0.2.1"
+
 react@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
@@ -6447,6 +6454,10 @@ wide-align@^1.1.0:
   resolved "https://registry.yarnpkg.com/wide-align/-/wide-align-1.1.2.tgz#571e0f1b0604636ebc0dfc21b0339bbe31341710"
   dependencies:
     string-width "^1.0.2"
+
+window-scroll-manager@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/window-scroll-manager/-/window-scroll-manager-0.2.1.tgz#afc5014cc711aa52c910f835f354aa7b975dc18b"
 
 window-size@0.1.0:
   version "0.1.0"

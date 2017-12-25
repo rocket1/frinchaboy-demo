@@ -14,7 +14,6 @@ class DemoModal extends Component {
      * @param e
      */
     static preventTouchMove(e) {
-        console.log('modal scroll');
         e.preventDefault();
         e.stopPropagation();
     }
