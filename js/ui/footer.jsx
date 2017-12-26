@@ -32,7 +32,7 @@ class Footer extends Component {
      * @returns {number}
      * @private
      */
-    _getDocHeight() {
+    static _getDocHeight() {
 
         const html = document.querySelector("html");
         const body = document.querySelector("body");
@@ -51,7 +51,7 @@ class Footer extends Component {
      * @returns {Number|number}
      * @private
      */
-    _getWindowHeight() {
+    static _getWindowHeight() {
 
         const w = window,
             d = document,
@@ -80,9 +80,22 @@ class Footer extends Component {
         const contentBottomPos = docHeight - (scrollPosition + windowHeight);
         const percentRevealed = (footerHeight - contentBottomPos) / footerHeight;
         const percentRevealedClamped = 1 - (percentRevealed < 0 ? 0 : percentRevealed);
-        const percentRevealedRounded = +percentRevealedClamped.toFixed(2);
 
-        return Math.floor(maxBlurPixels * percentRevealedRounded);
+        return Math.floor(maxBlurPixels * percentRevealedClamped);
+    }
+
+    /**
+     *
+     * @param blurAmount
+     * @returns {{filter: string, -webkit-filter: string}}
+     * @private
+     */
+    static _getBlurStyle(blurAmount) {
+        const blurAmount = blurAmount + 'px';
+        return {
+            'filter': 'blur(' + blurAmount + ')',
+            '-webkit-filter': 'blur(' + blurAmount + ')'
+        };
     }
 
     /**
@@ -91,11 +104,7 @@ class Footer extends Component {
      */
     render() {
 
-        const blurAmount = this._getBlurAmount() + 'px';
-        const blurStyle = {
-            'filter': 'blur(' + blurAmount + ')',
-            '-webkit-filter': 'blur(' + blurAmount + ')'
-        };
+        const blurStyle = this._getBlurStyle(this._getBlurAmount());
 
         // return (
         //     <div styleName="footer" style={blurStyle}>
