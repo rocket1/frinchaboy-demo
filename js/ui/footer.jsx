@@ -91,10 +91,12 @@ class Footer extends Component {
      * @private
      */
     static _getBlurStyle(blurAmount) {
-        const blurAmount = blurAmount + 'px';
+
+        const blurAmountPx = blurAmount + 'px';
+
         return {
-            'filter': 'blur(' + blurAmount + ')',
-            '-webkit-filter': 'blur(' + blurAmount + ')'
+            'filter': 'blur(' + blurAmountPx + ')',
+            '-webkit-filter': 'blur(' + blurAmountPx + ')'
         };
     }
 
