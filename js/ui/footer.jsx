@@ -32,7 +32,7 @@ class Footer extends Component {
      * @returns {number}
      * @private
      */
-    static _getDocHeight() {
+    _getDocHeight() {
 
         const html = document.querySelector("html");
         const body = document.querySelector("body");
@@ -51,7 +51,7 @@ class Footer extends Component {
      * @returns {Number|number}
      * @private
      */
-    static _getWindowHeight() {
+    _getWindowHeight() {
 
         const w = window,
             d = document,
@@ -90,7 +90,7 @@ class Footer extends Component {
      * @returns {{filter: string, -webkit-filter: string}}
      * @private
      */
-    static _getBlurStyle(blurAmount) {
+    _getBlurStyle(blurAmount) {
 
         const blurAmountPx = blurAmount + 'px';
 
@@ -113,6 +113,8 @@ class Footer extends Component {
         //         <Links/>
         //     </div>
         // )
+
+        // <img styleName="react-logo" src="img/react.svg"/>
 
         return (
             <div styleName="footer">
