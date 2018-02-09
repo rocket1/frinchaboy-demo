@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
     context: __dirname,
-    entry: ['./js/index.jsx'],
+    entry: ['./js/index.tsx'],
     devtool: process.env.NODE_ENV === 'development' ? 'cheap-eval-source-map' : false,
     output: {
         path: path.resolve(__dirname, 'public'),
@@ -18,7 +18,7 @@ const config = {
         historyApiFallback: true
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.json'],
+        extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
         //alias: {
         //    react: 'preact-compat',
         //    'react-dom': 'preact-compat'
@@ -40,6 +40,11 @@ const config = {
     ],
     module: {
         rules: [
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
+            },
             {
                 test: /\.css$/,
                 loaders: [

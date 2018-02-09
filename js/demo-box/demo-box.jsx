@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import CSSModules from 'react-css-modules';
 import styled from 'styled-components'
 import styles from './demo-box.less';
 
-class DemoBox extends Component {
+class DemoBox extends PureComponent {
 
     /**
      *

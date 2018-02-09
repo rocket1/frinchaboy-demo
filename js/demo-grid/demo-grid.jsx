@@ -36,6 +36,7 @@ class DemoGrid extends Component {
      */
     render() {
 
+        // TODO: extract from CSS using a library.
         const sizes = [
             {columns: 1, gutter: 24},
             {mq: '768px', columns: 2, gutter: 24},

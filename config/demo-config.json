@@ -27,7 +27,7 @@
       "imgSrc": "/img/pdxflix.png",
       "url": "http://www.pdxflix.com",
       "urlText": "www.pdxflix.com",
-      "description": "I find most movie showtimes websites to be full of adverts and noise, and doesn't reflect the boutique theater culture of Portland.",
+      "description": "A movie time web-app for Portland residents.",
       "tech": [
         "AngularJS",
         "HTML",
@@ -38,11 +38,24 @@
       ]
     },
     {
+      "title": "Ritual",
+      "imgSrc": "/img/ritual.png",
+      "description": "A prototype scavenger hunt app.",
+      "github": "https://github.com/rocket1/tasks",
+      "tech": [
+        "React Native"
+      ],
+      "screenshots": [
+        "/img/ritual.png",
+        "/img/ritual-2.png"
+      ]
+    },
+    {
       "title": "Asylum Arts",
       "imgSrc": "/img/asylum-arts.resized.png",
       "url": "http://www.asylum-arts.org",
       "urlText": "www.asylum-arts.org",
-      "description": "Asylum Arts supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
+      "description": "Artist fellowship from New York.",
       "tech": [
         "Yii",
         "AngularJS",
@@ -61,7 +74,8 @@
     {
       "title": "Whisperer (Google)",
       "imgSrc": "/img/whisperer-2.resized.png",
-      "description": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools.",
+      "description": "Google sales tool (prototype)",
+      "verbose": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools.",
       "tech": [
         "AngularJS",
         "HTML",
@@ -75,7 +89,8 @@
     {
       "title": "Whisperer v2 (Google)",
       "imgSrc": "/img/whisperer-v2.png",
-      "description": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools.",
+      "description": "Google sales tool (prototype)",
+      "verbose": "This tool is used by Google's internal Marketing department to manage a database of client 'stories' that is used in conjunction with CRM tools.",
       "tech": [
         "AngularJS",
         "HTML",
@@ -91,7 +106,8 @@
     {
       "title": "Abacus (Google)",
       "imgSrc": "/img/abacus.png",
-      "description": "This tool was used by companies wishing to view metrics regarding their internal Google online tools usage (e.g. Docs, Sheets).",
+      "description": "Google sales tool (prototype)",
+      "verbose": "This tool was used by companies wishing to view metrics regarding their internal Google online tools usage (e.g. Docs, Sheets).",
       "tech": [
         "AngularJS",
         "HTML",
@@ -104,7 +120,8 @@
     {
       "title": "Diva (Google)",
       "imgSrc": "/img/diva.resized.png",
-      "description": "This was an inventory tool for retail.  It used RFID tracking of merchandise to accurately track inventory in-store or remote.",
+      "description": "Google retail tool (prototype).",
+      "verbose": "This was an inventory tool for retail.  It used RFID tracking of merchandise to accurately track inventory in-store or remote.",
       "tech": [
         "AngularJS",
         "HTML",
@@ -119,7 +136,8 @@
       "imgSrc": "/img/mywedding.png",
       "url": "http://www.mywedding.com",
       "urlText": "www.mywedding.com",
-      "description": "MyWedding is an internationally renowned wedding planning site.  I worked there for two years doing all things web development related.",
+      "description": "Popular Wedding planning website.",
+      "verbose": "MyWedding is an internationally renowned wedding planning site.  I worked there for two years doing all things web development related.",
       "tech": [
         "JavaScript/JQuery",
         "HTML",
@@ -181,7 +199,8 @@
     {
       "title": "North American Repower",
       "imgSrc": "/img/nar.png",
-      "description": "NAR develops diesel-to-natural gas conversion kits for semi trucks. I built an installer system that allows secure installation records and for the EPA to search for vehicle history by VIN.",
+      "description": "Environmental engine manufacturer for commercial trucks.",
+      "verbose": "NAR develops diesel-to-natural gas conversion kits for semi trucks. I built an installer system that allows secure installation records and for the EPA to search for vehicle history by VIN.",
       "tech": [
         "Laravel",
         "AngularJS",
@@ -210,7 +229,7 @@
     {
       "title": "MIGA",
       "imgSrc": "/img/miga.resized.png",
-      "description": "Make Israel Great Again (MIGA) supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
+      "description": "Artist fellowship from New York.",
       "tech": [
         "Yii",
         "AngularJS",
@@ -241,7 +260,7 @@
     {
       "title": "Six Points Fellowship",
       "imgSrc": "/img/6points.png",
-      "description": "Six Points Fellowship supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
+      "description": "Artist fellowship from New York.",
       "tech": [
         "JavaScript",
         "HTML",
@@ -256,8 +275,9 @@
     {
       "title": "Six Points Fellowship v2",
       "imgSrc": "/img/6points-v2.resized.png",
-      "description": "Six Points Fellowship supports contemporary Jewish culture on an international scale, bringing greater exposure to artists and cultural initiatives and providing opportunities for new projects and collaborations.",
+      "description": "Artist fellowship from New York.",
       "tech": [
+        "WordPress",
         "JavaScript",
         "HTML",
         "LESS/CSS",

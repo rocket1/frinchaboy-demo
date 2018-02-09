@@ -20,11 +20,11 @@ class Footer extends Component {
             scrollPosition: 0
         };
 
-        window.addEventListener('window-scroll', (e) => {
-            this.setState({
-                scrollPosition: e.detail.scrollPosition
-            });
-        });
+        // window.addEventListener('window-scroll', (e) => {
+        //     this.setState({
+        //         scrollPosition: e.detail.scrollPosition
+        //     });
+        // });
     }
 
     /**
@@ -53,12 +53,13 @@ class Footer extends Component {
      */
     _getWindowHeight() {
 
-        const w = window,
-            d = document,
-            e = d.documentElement,
-            g = d.getElementsByTagName('body')[0];
-
-        return w.innerHeight || e.clientHeight || g.clientHeight;
+        //
+        // const w = window,
+        //     d = document,
+        //     e = d.documentElement,
+        //     g = d.getElementsByTagName('body')[0];
+        //
+        // return w.innerHeight || e.clientHeight || g.clientHeight;
     }
 
     /**

@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import CSSModules from 'react-css-modules';
+import PropTypes from 'prop-types';
 import styles from './demo-modal.less';
 import styled from 'styled-components'
 import cx from "classnames";
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Close from 'react-material-icons/icons/navigation/close';
 import Masonry from 'react-masonry-component';
 import FadeImage from '../fade-image/fade-image';
@@ -56,25 +58,26 @@ class DemoModal extends Component {
     render() {
 
         const project = this.props.project;
-        const title = project && project.title ? project.title : '';
-        const tech = project && project.tech ? project.tech.join(', ') : '';
-
-        const url = project && project.url ? (
-            <div styleName="url">
-                <a target="_blank" href={project.url} onClick={(e) => {
-                    e.stopPropagation();
-                }}>{project.urlText ? project.urlText : project.url}</a>
-            </div>
-        ) : null;
-
-        let content = null;
-
-        // TODO: Wish this was in the CSS, but didn't work there :(
-        const masonryOptions = {
-            gutter: 24
-        };
+        const bgColor = this.props.bgColor;
 
         if (project) {
+
+            const title = project.title ? project.title : '';
+            const tech = project.tech ? project.tech.join(', ') : '';
+            const github = project.github ? project.github : '';
+
+            const url = project.url ? (
+                <div styleName="url">
+                    <a target="_blank" href={project.url} onClick={(e) => {
+                        e.stopPropagation();
+                    }}>{project.urlText ? project.urlText : project.url}</a>
+                </div>
+            ) : null;
+
+            // TODO: Wish this was in the CSS, but didn't work there :(
+            const masonryOptions = {
+                gutter: 24
+            };
 
             this._lockScroll();
 
@@ -82,53 +85,56 @@ class DemoModal extends Component {
                 return <div key={index} styleName="screenshot"><FadeImage src={src}/></div>
             });
 
-            content = (
+            let content = (
                 <div className="content">
                     {url}
                     <div styleName="verbose">{project.verbose ? project.verbose : project.description}</div>
-                    <div styleName="tech">{tech}</div>
+                    <div styleName="tech">{tech} {project.github && <span>(<a target="_blank" href={github}>source</a>)</span>}</div>
+
                     <Masonry options={masonryOptions} styleName="screenshots">{screenshots}</Masonry>
                 </div>
+            );
+
+            const className = cx(styles['demo-modal'], {
+                [styles.show]: !!project
+            });
+
+            // const ModalDiv = styled.div`
+            //     background-color: ${bgColor[0]};
+            //     box-shadow: inset 0 0 5em 1em ${bgColor[1]};
+            // `;
+
+            return (
+                <MuiThemeProvider>
+                    <div className={className} style={{backgroundColor: bgColor}}>
+                        <div styleName="modal-wrapper">
+                            <div styleName="toolbar-wrapper">
+                                <div styleName="toolbar">
+                                    <h2>{title}</h2>
+                                    <a onClick={(e) => this.closeModal(e)} href="">
+                                        <Close/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div styleName="body">
+                                {content}
+                            </div>
+                        </div>
+                    </div>
+                </MuiThemeProvider>
             );
         }
         else {
             this._unlockScroll();
-        }
-
-        const className = cx(styles['demo-modal'], {
-            [styles.show]: !!project
-        });
-
-        if (this.props.bgColor) {
-
-            // const ModalDiv = styled.div`
-            //     background-color: ${this.props.bgColor[0]};
-            //     box-shadow: inset 0 0 5em 1em ${this.props.bgColor[1]};
-            // `;
-
-            return (
-
-                <div className={className} style={{backgroundColor: this.props.bgColor}}>
-                    <div styleName="modal-wrapper">
-                        <div styleName="toolbar-wrapper">
-                            <div styleName="toolbar">
-                                <h2>{title}</h2>
-                                <a onClick={(e) => this.closeModal(e)} href>
-                                    <Close/>
-                                </a>
-                            </div>
-                        </div>
-                        <div styleName="body">
-                            {content}
-                        </div>
-                    </div>
-                </div>
-            );
-        }
-        else {
             return null;
         }
     }
 }
+
+DemoModal.propTypes = {
+    project: PropTypes.object,
+    closeFunc: PropTypes.func,
+    bgColor: PropTypes.string
+};
 
 export default CSSModules(DemoModal, styles);
