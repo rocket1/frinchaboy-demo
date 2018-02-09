@@ -40,7 +40,7 @@
     {
       "title": "Ritual",
       "imgSrc": "/img/ritual.png",
-      "description": "A prototype scavenger hunt app.",
+      "description": "A prototype scavenger hunt app built with React Native.",
       "github": "https://github.com/rocket1/tasks",
       "tech": [
         "React Native"
@@ -48,27 +48,6 @@
       "screenshots": [
         "/img/ritual.png",
         "/img/ritual-2.png"
-      ]
-    },
-    {
-      "title": "Asylum Arts",
-      "imgSrc": "/img/asylum-arts.resized.png",
-      "url": "http://www.asylum-arts.org",
-      "urlText": "www.asylum-arts.org",
-      "description": "Artist fellowship from New York.",
-      "tech": [
-        "Yii",
-        "AngularJS",
-        "React",
-        "HTML",
-        "LESS/CSS",
-        "MySQL",
-        "PHP"
-      ],
-      "screenshots": [
-        "/img/asylum-arts.resized.png",
-        "/img/asylum-arts-2.resized.png",
-        "/img/asylum-arts-4.resized.png"
       ]
     },
     {
@@ -227,6 +206,27 @@
       ]
     },
     {
+      "title": "Asylum Arts",
+      "imgSrc": "/img/asylum-arts.resized.png",
+      "url": "http://www.asylum-arts.org",
+      "urlText": "www.asylum-arts.org",
+      "description": "Artist fellowship from New York.",
+      "tech": [
+        "Yii",
+        "AngularJS",
+        "React",
+        "HTML",
+        "LESS/CSS",
+        "MySQL",
+        "PHP"
+      ],
+      "screenshots": [
+        "/img/asylum-arts.resized.png",
+        "/img/asylum-arts-2.resized.png",
+        "/img/asylum-arts-4.resized.png"
+      ]
+    },
+    {
       "title": "MIGA",
       "imgSrc": "/img/miga.resized.png",
       "description": "Artist fellowship from New York.",
@@ -382,6 +382,19 @@
       ],
       "screenshots": [
         "/img/mvp.png"
+      ]
+    },
+    {
+      "title": "My public portfolio",
+      "imgSrc": "/img/frinchaboy.png",
+      "url": "http://frinchaboy.com/",
+      "urlText": "frinchaboy.com",
+      "description": "The site you are currently looking at was built with React.",
+      "tech": [
+        "React"
+      ],
+      "screenshots": [
+        "/img/frinchaboy.png"
       ]
     },
     {
