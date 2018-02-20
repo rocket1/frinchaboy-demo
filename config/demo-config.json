@@ -388,7 +388,7 @@
     },
     {
       "title": "My public portfolio",
-      "imgSrc": "/img/frinchaboy.png",
+      "imgSrc": "/img/frinchaboy.jpg",
       "url": "http://frinchaboy.com/",
       "urlText": "frinchaboy.com",
       "description": "The site you are currently looking at was built with React.",
@@ -396,7 +396,7 @@
         "React"
       ],
       "screenshots": [
-        "/img/frinchaboy.png"
+        "/img/frinchaboy.jpg"
       ]
     },
     {
