@@ -39,15 +39,15 @@
     },
     {
       "title": "Ritual",
-      "imgSrc": "/img/ritual.png",
+      "imgSrc": "/img/ritual.jpg",
       "description": "A prototype scavenger hunt app built with React Native.",
       "github": "https://github.com/rocket1/tasks",
       "tech": [
         "React Native"
       ],
       "screenshots": [
-        "/img/ritual.png",
-        "/img/ritual-2.png",
+        "/img/ritual.jpg",
+        "/img/ritual-2.jpg",
         "/img/ritual-3.png",
         "/img/ritual-4.png"
       ]
