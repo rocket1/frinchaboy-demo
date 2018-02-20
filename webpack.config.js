@@ -34,9 +34,10 @@ const config = {
             template: 'index-tpl.html',
             filename: '../index.html'
         }),
-        new UglifyJSPlugin()
+        new UglifyJSPlugin(),
         // new webpack.HotModuleReplacementPlugin(),
         // new webpack.NamedModulesPlugin(),
+        // new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
     ],
     module: {
         rules: [
