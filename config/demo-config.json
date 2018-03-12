@@ -387,6 +387,25 @@
       ]
     },
     {
+      "title": "Machine Vision Products (CRM)",
+      "imgSrc": "/img/mvp-support.png",
+      "url": "http://www.visionpro.com",
+      "urlText": "www.visionpro.com",
+      "description": "A custom CRM tool for Machine Vision Products.",
+      "verbose": "Built in 2006, this custom CRM tool is still in use today for customer management and bug tracking.",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "PHP",
+        "MySQL"
+      ],
+      "screenshots": [
+        "/img/mvp-support.png",
+        "/img/mvp-support-2.png"
+      ]
+    },
+    {
       "title": "My public portfolio",
       "imgSrc": "/img/frinchaboy.jpg",
       "url": "http://frinchaboy.com/",
