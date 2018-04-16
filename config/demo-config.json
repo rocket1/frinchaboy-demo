@@ -22,21 +22,7 @@
     ]
   ],
   "projects": [
-    {
-      "title": "PDX Flix",
-      "imgSrc": "/img/pdxflix.png",
-      "url": "http://www.pdxflix.com",
-      "urlText": "www.pdxflix.com",
-      "description": "A movie time web-app for Portland residents.",
-      "tech": [
-        "AngularJS",
-        "HTML",
-        "LESS/CSS"
-      ],
-      "screenshots": [
-        "/img/pdxflix.png"
-      ]
-    },
+
     {
       "title": "Ritual",
       "imgSrc": "/img/ritual.jpg",
@@ -128,6 +114,32 @@
       ],
       "screenshots": [
         "/img/mywedding-1.png"
+      ]
+    },
+    {
+      "title": "PDX Flix",
+      "imgSrc": "/img/pdxflix.png",
+      "url": "http://www.pdxflix.com",
+      "urlText": "www.pdxflix.com",
+      "description": "A movie time web-app for Portland residents.",
+      "tech": [
+        "AngularJS",
+        "HTML",
+        "LESS/CSS"
+      ],
+      "screenshots": [
+        "/img/pdxflix.png"
+      ]
+    },{
+      "title": "No Rain",
+      "imgSrc": "/img/norain.jpg",
+      "description": "A website to help find nearby locations with sunshine.",
+      "tech": [
+        "NodeJS/Express",
+        "React"
+      ],
+      "screenshots": [
+        "/img/norain.jpg"
       ]
     },
     {
