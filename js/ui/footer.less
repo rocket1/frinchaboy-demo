@@ -3,6 +3,10 @@
 
 .footer {
 
+  opacity: 0;
+  .blur(20px);
+  .transition(~"opacity, filter", 1.0s);
+
   @darken: 0.3;
 
   background: linear-gradient(
@@ -38,3 +42,9 @@
     width: 24px;
   }
 }
+
+.show {
+  opacity: 1;
+  .blur(0px);
+}
+

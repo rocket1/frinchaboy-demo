@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import CSSModules from 'react-css-modules';
+import cx from  'classnames';
 import styles from './footer.less';
 import ScrollManager from 'window-scroll-manager'
 import Links from './links';
@@ -109,6 +110,10 @@ class Footer extends Component {
 
         const blurStyle = this._getBlurStyle(this._getBlurAmount());
 
+        const className = cx(styles['footer'], {
+          [styles.show]: this.props.ready
+        });
+
         // return (
         //     <div styleName="footer" style={blurStyle}>
         //         <Links/>
@@ -118,7 +123,7 @@ class Footer extends Component {
         // <img styleName="react-logo" src="img/react.svg"/>
 
         return (
-            <div styleName="footer">
+            <div className={className}>
                 <Links/>
             </div>
         )

@@ -19,31 +19,29 @@ html, body {
 }
 
 .app-body {
-
   opacity: 0;
   .blur(20px);
-
-  &.show {
-    opacity: 1;
-    .blur(0px);
-  }
-
   .transition(~"opacity, filter", 1.0s);
+}
 
-  .content {
+.show {
+  opacity: 1;
+  .blur(0px);
+}
 
-    padding: 24px;
+.content {
+
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: @footer-height;
+  background-color: white;
+  z-index: 1;
+
+  .content-inner {
     display: flex;
     justify-content: center;
-    width: 100%;
-    position: relative;
-    margin-bottom: @footer-height;
-    background-color: white;
-    z-index: 1;
-
-    .content-inner {
-      display: flex;
-      justify-content: center;
-    }
   }
 }

@@ -93,7 +93,7 @@ class App extends Component {
 
         const ready = this.state.contentReady && this.state.fontReady;
 
-        const className = cx(styles['app-body'], {
+        const bodyClassName = cx(styles['app-body'], {
             [styles.show]: ready
         });
 
@@ -102,10 +102,10 @@ class App extends Component {
                 <BrowserRouter>
                     <Route exact path="/">
                       <React.Fragment>
-                        <Footer/>
+                        <Footer ready={ready}/>
                         <DemoModal project={this.state.project} closeFunc={this.closeModal}
                                    bgColor={this.state.modalBgColor}/>
-                        <div styleName="app-body" className={className}>
+                        <div className={bodyClassName}>
                             <Header/>
                             <div styleName="content">
                                 <div styleName="content-inner">
