@@ -23,21 +23,7 @@
   ],
   "projects": [
 
-    {
-      "title": "Ritual",
-      "imgSrc": "/img/ritual.jpg",
-      "description": "A prototype scavenger hunt app built with React Native.",
-      "github": "https://github.com/rocket1/tasks",
-      "tech": [
-        "React Native"
-      ],
-      "screenshots": [
-        "/img/ritual.jpg",
-        "/img/ritual-2.jpg",
-        "/img/ritual-3.png",
-        "/img/ritual-4.png"
-      ]
-    },
+
     {
       "title": "Whisperer (Google)",
       "imgSrc": "/img/whisperer-2.resized.png",
@@ -114,6 +100,20 @@
       ],
       "screenshots": [
         "/img/mywedding-1.png"
+      ]
+    },{
+      "title": "Ritual",
+      "imgSrc": "/img/ritual.jpg",
+      "description": "A prototype scavenger hunt app built with React Native.",
+      "github": "https://github.com/rocket1/tasks",
+      "tech": [
+        "React Native"
+      ],
+      "screenshots": [
+        "/img/ritual.jpg",
+        "/img/ritual-2.jpg",
+        "/img/ritual-3.png",
+        "/img/ritual-4.png"
       ]
     },
     {
@@ -340,7 +340,7 @@
     {
       "title": "Combio",
       "imgSrc": "/img/combio.png",
-      "description": "Combio was a web-portal company that I worked for in 2000 just before and leading up to the Great Internet Crash.",
+      "description": "Combio was a web-portal company alive during the Great Internet Crash.",
       "tech": [
         "JavaScript",
         "HTML",
@@ -386,7 +386,7 @@
       "imgSrc": "/img/mvp.png",
       "url": "http://www.visionpro.com",
       "urlText": "www.visionpro.com",
-      "description": "MVP builds Automated Optical Inspection machines for circuit board assembly production.",
+      "description": "MVP builds Automated Optical Inspection machines.",
       "tech": [
         "JavaScript",
         "HTML",
