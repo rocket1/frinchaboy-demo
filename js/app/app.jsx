@@ -101,17 +101,19 @@ class App extends Component {
             <MuiThemeProvider>
                 <BrowserRouter>
                     <Route exact path="/">
+                      <React.Fragment>
+                        <Footer/>
+                        <DemoModal project={this.state.project} closeFunc={this.closeModal}
+                                   bgColor={this.state.modalBgColor}/>
                         <div styleName="app-body" className={className}>
-                            <DemoModal project={this.state.project} closeFunc={this.closeModal}
-                                       bgColor={this.state.modalBgColor}/>
                             <Header/>
                             <div styleName="content">
                                 <div styleName="content-inner">
                                     <DemoGrid ready={ready} demoBoxClick={this.openModal}/>
                                 </div>
                             </div>
-                            <Footer/>
                         </div>
+                      </React.Fragment>
                     </Route>
                 </BrowserRouter>
             </MuiThemeProvider>
