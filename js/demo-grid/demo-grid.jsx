@@ -19,15 +19,6 @@ class DemoGrid extends Component {
             let bgColor = demoConfig.colors[index % demoConfig.colors.length];
             return <DemoBox demoBoxClick={props.demoBoxClick} key={index} config={config} bgColor={bgColor}/>
         });
-
-        this._demoBoxes.unshift(
-            <div styleName="intro-box" key="intro-box">
-                <b>Jason Frinchaboy</b><br/>
-                Computer Programmer.<br/>
-                Web Developer.<br/>
-                All around good guy.
-            </div>
-        );
     }
 
     /**

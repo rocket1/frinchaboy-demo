@@ -22,8 +22,13 @@
     ]
   ],
   "projects": [
-
-
+    {
+      "imgSrc": "/img/my-face-halftone.png",
+      "verbose": "Hello, I am Jason Frinchaboy. Computer Programmer. Web Developer. All around good guy.",
+      "screenshots": [
+        "/img/my-face-halftone.png"
+      ]
+    },
     {
       "title": "Whisperer (Google)",
       "imgSrc": "/img/whisperer-2.resized.png",
@@ -101,7 +106,8 @@
       "screenshots": [
         "/img/mywedding-1.png"
       ]
-    },{
+    },
+    {
       "title": "Ritual",
       "imgSrc": "/img/ritual.jpg",
       "description": "A prototype scavenger hunt app built with React Native.",
@@ -130,7 +136,8 @@
       "screenshots": [
         "/img/pdxflix.png"
       ]
-    },{
+    },
+    {
       "title": "No Rain",
       "imgSrc": "/img/norain.jpg",
       "description": "A website to help find nearby locations with sunshine.",
